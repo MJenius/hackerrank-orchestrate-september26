@@ -2,6 +2,7 @@
 from calendar import monthrange
 from collections import Counter, defaultdict
 from datetime import date, timedelta
+from math import ceil
 from statistics import median
 
 from code.finance.lifecycle import EventLifecycle
@@ -20,6 +21,14 @@ def monthly_history(events):
 
 
 class RecurrenceEngine:
+    @staticmethod
+    def _essential_reserve(amounts):
+        ordered = sorted(amounts)
+        if len(ordered) < 4:
+            return round(max(ordered), 2)
+        idx = max(0, ceil(0.75 * len(ordered)) - 1)
+        return round(ordered[idx], 2)
+
     @staticmethod
     def project_recurring_events(events, request_date, horizon_days=90):
         start = date.fromisoformat(request_date)
@@ -55,6 +64,8 @@ class RecurrenceEngine:
                 history = [e for e in history if date.fromisoformat(e.settlement_date).toordinal() % cadence == phase]
                 if len(history) < 3:
                     continue
+                if category == 'dining' and len(history) < 4:
+                    continue
             elif not monthly_history(history):
                 continue
 
@@ -66,9 +77,12 @@ class RecurrenceEngine:
             if due < start:
                 continue
             recent = [e.amount for e in history if date.fromisoformat(e.settlement_date) >= start - timedelta(days=90)]
-            # ponytail: a recent median estimates variable spending, not its worst
-            # case; replace with a calibrated reserve when more history exists.
-            amount = round(median(recent or [source.amount]), 2) if variable else source.amount
+            if category in ('groceries', 'transport'):
+                amount = RecurrenceEngine._essential_reserve(recent or [source.amount])
+            elif variable:
+                amount = round(median(recent or [source.amount]), 2)
+            else:
+                amount = source.amount
             while due <= end:
                 projected.append({
                     'event_id': f'proj_{source.event_id}_{due:%Y%m%d}',
