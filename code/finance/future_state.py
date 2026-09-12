@@ -104,9 +104,15 @@ class FutureStateBuilder:
         end_fact = latest.get('salary_end')
         restart = next((f for f in reversed(salary_facts) if f.fact_type in ('salary_start', 'salary_resume')), None)
         ended = end_fact and (restart is None or restart.sent_at <= end_fact.sent_at)
+        end_date = None
+        if ended:
+            end_date = date.fromisoformat((end_fact.effective_date or end_fact.sent_at[:10]))
         regular = [e for e in events if _regular_salary(e) and e.status in ('settled', 'scheduled')]
-        if any('final' in e.description.lower() for e in regular if e.settlement_date < start.isoformat()) and restart is None:
+        has_future_schedule = any(e.status == 'scheduled' and e.settlement_date >= start.isoformat() for e in regular)
+        if (any('final' in e.description.lower() for e in regular if e.settlement_date < start.isoformat())
+                and restart is None and not has_future_schedule):
             ended = True
+            end_date = max(date.fromisoformat(e.settlement_date) for e in regular if 'final' in e.description.lower())
 
         result = []
         groups = defaultdict(list)
@@ -121,75 +127,78 @@ class FutureStateBuilder:
             if fact.amount is not None and fact.currency and not any(key[0] == fact.currency for key in groups):
                 groups[(fact.currency, 'main')] = []
 
-        if not ended:
-            for (currency, group_name), group in groups.items():
-                group.sort(key=lambda e: (e.settlement_date, e.event_id))
-                applicable = [f for f in salary_facts if f.currency in (None, currency)] if group_name == 'main' else []
-                days = [date.fromisoformat(e.settlement_date).day for e in group]
-                pay_day = Counter(days).most_common(1)[0][0] if days else None
-                # Preserve the established salary date when a one-off payslip is later.
-                history = [e for e in group if e.status == 'settled' and e.settlement_date < start.isoformat()
-                           and date.fromisoformat(e.settlement_date).day == pay_day]
-                scheduled = [e for e in group if e.status == 'scheduled' and e.settlement_date >= start.isoformat()]
-                dated = [f for f in applicable if f.effective_date and f.fact_type != 'salary_end']
-                recurring = monthly_history(history) or monthly_history(history + scheduled)
-                recurring = recurring or any(f.fact_type in ('salary_resume', 'salary_regular', 'salary_base', 'salary_remaining', 'salary_increase') and f.amount is not None for f in applicable)
-                source = history[-1] if history else (group[-1] if group else None)
-                amount = source.amount if source else None
-                if scheduled:
-                    due = date.fromisoformat(scheduled[0].settlement_date)
-                    amount = scheduled[0].amount
+        for (currency, group_name), group in groups.items():
+            group.sort(key=lambda e: (e.settlement_date, e.event_id))
+            applicable = [f for f in salary_facts if f.currency in (None, currency)] if group_name == 'main' else []
+            days = [date.fromisoformat(e.settlement_date).day for e in group]
+            pay_day = Counter(days).most_common(1)[0][0] if days else None
+            # Preserve the established salary date when a one-off payslip is later.
+            history = [e for e in group if e.status == 'settled' and e.settlement_date < start.isoformat()
+                       and date.fromisoformat(e.settlement_date).day == pay_day]
+            scheduled = [e for e in group if e.status == 'scheduled' and e.settlement_date >= start.isoformat()]
+            dated = [f for f in applicable if f.effective_date and f.fact_type != 'salary_end']
+            recurring = monthly_history(history) or monthly_history(history + scheduled)
+            recurring = recurring or any(f.fact_type in ('salary_resume', 'salary_regular', 'salary_base', 'salary_remaining', 'salary_increase') and f.amount is not None for f in applicable)
+            source = history[-1] if history else (group[-1] if group else None)
+            amount = source.amount if source else None
+            if scheduled:
+                due = date.fromisoformat(scheduled[0].settlement_date)
+                amount = scheduled[0].amount
+                pay_day = due.day
+            elif history:
+                due = next_month(date.fromisoformat(history[-1].settlement_date), pay_day)
+            elif dated:
+                due = date.fromisoformat(dated[-1].effective_date)
+                pay_day = due.day
+            else:
+                continue
+            if dated:
+                last_dated = dated[-1]
+                if last_dated.fact_type in ('salary_delay', 'salary_start', 'salary_resume', 'salary_confirmed'):
+                    due = date.fromisoformat(last_dated.effective_date)
                     pay_day = due.day
-                elif history:
-                    due = next_month(date.fromisoformat(history[-1].settlement_date), pay_day)
-                elif dated:
-                    due = date.fromisoformat(dated[-1].effective_date)
-                    pay_day = due.day
-                else:
+            if due < start:
+                # A specified historical effective date changes the future rate,
+                # but does not justify inventing a missed salary payment.
+                if not applicable:
                     continue
-                if dated:
-                    last_dated = dated[-1]
-                    if last_dated.fact_type in ('salary_delay', 'salary_start', 'salary_resume', 'salary_confirmed'):
-                        due = date.fromisoformat(last_dated.effective_date)
-                        pay_day = due.day
-                if due < start:
-                    # A specified historical effective date changes the future rate,
-                    # but does not justify inventing a missed salary payment.
-                    if not applicable:
-                        continue
-                    while due < start:
-                        due = next_month(due, pay_day)
-                if not recurring and not scheduled and not dated:
-                    continue
-                first_due = due
-                while due <= end:
-                    day_str = due.isoformat()
-                    matching = next((e for e in scheduled if e.settlement_date == day_str), None)
-                    cash_amount = matching.amount if matching else amount
-                    used_fact = None
-                    for fact in applicable:
-                        if fact.amount is None or fact.fact_type in ('salary_end', 'salary_delay'):
-                            continue
-                        effective = fact.effective_date or first_due.isoformat()
-                        if day_str < effective:
-                            continue
-                        if fact.fact_type in ('salary_next', 'salary_temporary', 'salary_confirmed') and due != first_due:
-                            continue
-                        cash_amount, used_fact = fact.amount, fact
-                    if cash_amount is not None and cash_amount > 0:
-                        event_id = matching.event_id if matching else f'proj_sal_{currency}_{group_name}_{due:%Y%m%d}'
-                        result.append({
-                            'event_id': event_id, 'source_event_id': source.event_id if source else None,
-                            'amount': cash_amount, 'currency': currency, 'direction': 'credit',
-                            'settlement_date': day_str, 'status': 'scheduled' if matching or used_fact else 'projected',
-                            'category': 'salary', 'description': 'Confirmed or recurring salary',
-                            'is_projected': matching is None, 'is_recurring': recurring,
-                            'recurrence_evidence_ids': [e.event_id for e in history],
-                            'evidence_message_id': used_fact.message_id if used_fact else None,
-                        })
-                    if not recurring:
-                        break
+                while due < start:
                     due = next_month(due, pay_day)
+            if not recurring and not scheduled and not dated:
+                continue
+            first_due = due
+            while due <= end:
+                day_str = due.isoformat()
+                if ended and end_date and due > end_date:
+                    break
+                matching = next((e for e in scheduled if e.settlement_date == day_str), None)
+                if ended and matching is None:
+                    break
+                cash_amount = matching.amount if matching else amount
+                used_fact = None
+                for fact in applicable:
+                    if fact.amount is None or fact.fact_type in ('salary_end', 'salary_delay'):
+                        continue
+                    effective = fact.effective_date or first_due.isoformat()
+                    if day_str < effective:
+                        continue
+                    if fact.fact_type in ('salary_next', 'salary_temporary', 'salary_confirmed') and due != first_due:
+                        continue
+                    cash_amount, used_fact = fact.amount, fact
+                if cash_amount is not None and cash_amount > 0:
+                    event_id = matching.event_id if matching else f'proj_sal_{currency}_{group_name}_{due:%Y%m%d}'
+                    result.append({
+                        'event_id': event_id, 'source_event_id': source.event_id if source else None,
+                        'amount': cash_amount, 'currency': currency, 'direction': 'credit',
+                        'settlement_date': day_str, 'status': 'scheduled' if matching or used_fact else 'projected',
+                        'category': 'salary', 'description': 'Confirmed or recurring salary',
+                        'is_projected': matching is None, 'is_recurring': recurring,
+                        'recurrence_evidence_ids': [e.event_id for e in history],
+                        'evidence_message_id': used_fact.message_id if used_fact else None,
+                    })
+                if not recurring:
+                    break
+                due = next_month(due, pay_day)
 
         # Only the approved invoice is forecast; other project earnings are contingent.
         for fact in facts:

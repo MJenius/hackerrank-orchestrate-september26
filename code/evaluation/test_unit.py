@@ -1,4 +1,5 @@
 import sys, os
+from datetime import date
 sys.path.insert(0, os.path.abspath('.'))
 from code.finance.currency import CurrencyConverter
 from code.finance.lifecycle import EventLifecycle
@@ -10,6 +11,7 @@ from code.finance.recurrence import RecurrenceEngine
 from code.finance.simulator import BalanceSimulator
 from code.evidence.message_resolver import MessageResolver, MessageFact
 from code.data.models import Message
+from code.finance.future_state import FutureStateBuilder
 
 def test_all():
     print('Testing Boolean CSV Parsing...')
@@ -85,6 +87,19 @@ def test_all():
     assert facts[0].amount == 1500.0
     assert facts[0].currency == 'EUR'
     print('  -> Message Facts Extraction OK')
+
+    print('Testing Salary End Does Not Drop Confirmed Scheduled Salary...')
+    salary_events = [
+        FinancialEvent('s1', 'u4', 'income', 'Payroll', 'salary', 'credit', 1000.0, 'USD', '2024-01-15', '2024-01-15', 'settled', None, 'fixed', None),
+        FinancialEvent('s2', 'u4', 'income', 'Payroll', 'salary', 'credit', 1000.0, 'USD', '2024-02-15', '2024-02-15', 'settled', None, 'fixed', None),
+        FinancialEvent('s3', 'u4', 'income', 'Payroll', 'salary', 'credit', 1000.0, 'USD', '2024-03-15', '2024-03-15', 'scheduled', None, 'fixed', None),
+    ]
+    facts = [MessageFact('m_end', 'u4', 'salary_end', effective_date='2024-03-20', sent_at='2024-02-28T09:00:00Z')]
+    salary_proj = FutureStateBuilder._salary_events(salary_events, facts, date(2024, 3, 1), date(2024, 5, 30), 'USD')
+    dates = [e['settlement_date'] for e in salary_proj]
+    assert '2024-03-15' in dates
+    assert '2024-04-15' not in dates
+    print('  -> Salary End Handling OK')
 
     print('Testing Balance Simulator and Minimum-Balance Safety...')
     conv = CurrencyConverter({})
