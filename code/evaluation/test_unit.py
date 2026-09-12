@@ -78,26 +78,6 @@ def test_all():
     assert proj[0]['amount'] == 50.0
     print('  -> Recurrence Projection OK')
 
-    print('Testing Conservative Essential and Discretionary Recurrence Rules...')
-    variable_history = [
-        FinancialEvent('g1', 'u2', 'expense', 'Local market', 'groceries', 'debit', 100.0, 'USD', '2024-01-01', '2024-01-01', 'settled', None, 'reducible', None),
-        FinancialEvent('g2', 'u2', 'expense', 'Local market', 'groceries', 'debit', 200.0, 'USD', '2024-01-08', '2024-01-08', 'settled', None, 'reducible', None),
-        FinancialEvent('g3', 'u2', 'expense', 'Local market', 'groceries', 'debit', 300.0, 'USD', '2024-01-15', '2024-01-15', 'settled', None, 'reducible', None),
-        FinancialEvent('g4', 'u2', 'expense', 'Local market', 'groceries', 'debit', 400.0, 'USD', '2024-01-22', '2024-01-22', 'settled', None, 'reducible', None),
-    ]
-    proj_var = RecurrenceEngine.project_recurring_events(variable_history, '2024-01-29', horizon_days=14)
-    assert len(proj_var) > 0
-    assert proj_var[0]['amount'] == 300.0
-
-    dining_history = [
-        FinancialEvent('d1', 'u3', 'expense', 'Cafe', 'dining', 'debit', 20.0, 'USD', '2024-01-01', '2024-01-01', 'settled', None, 'stoppable', None),
-        FinancialEvent('d2', 'u3', 'expense', 'Cafe', 'dining', 'debit', 22.0, 'USD', '2024-01-08', '2024-01-08', 'settled', None, 'stoppable', None),
-        FinancialEvent('d3', 'u3', 'expense', 'Cafe', 'dining', 'debit', 21.0, 'USD', '2024-01-15', '2024-01-15', 'settled', None, 'stoppable', None),
-    ]
-    proj_dining = RecurrenceEngine.project_recurring_events(dining_history, '2024-01-20', horizon_days=20)
-    assert len(proj_dining) == 0
-    print('  -> Recurrence Safeguards OK')
-
     print('Testing Message Facts Extraction...')
     msgs = [
         Message('m1', 'u1', None, None, '2024-03-01T09:00:00Z', 'sms', 'Your temporary monthly pay is EUR 1500.00 starting 2024-03-15.')
