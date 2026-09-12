@@ -1,0 +1,21 @@
+{
+  "session": "Codex continuation 2026-09-12",
+  "unit_tests": "10 existing check groups passed",
+  "full_run": {"requests": 250, "completed": 250, "old_validator_errors": 0},
+  "public_samples": 25,
+  "field_matches": {
+    "amount_safe_to_pay": 3,
+    "affordability_status": 22,
+    "recommended_payment_method": 23,
+    "payment_plan": 22,
+    "earliest_date_for_full_payment": 21,
+    "spending_changes_needed": 21
+  },
+  "six_field_matches": 3,
+  "limitations": [
+    "Old regression calls values within 0.05 exact; final measurement must use exact monetary equality.",
+    "Old production validator receives no profile, option, event or simulator context.",
+    "Earliest-date calculation truncates cash flows at desired completion date.",
+    "Preexisting solution is mostly untracked; no previous changes were discarded."
+  ]
+}
