@@ -1,14 +1,14 @@
 # Exact public regression
 
-All six fields: 2/25.
+All six fields: 3/25.
 
 | Field | Exact matches |
 |---|---:|
-| amount_safe_to_pay | 2/25 |
-| affordability_status | 19/25 |
-| recommended_payment_method | 20/25 |
-| payment_plan | 19/25 |
-| earliest_date_for_full_payment | 18/25 |
+| amount_safe_to_pay | 3/25 |
+| affordability_status | 20/25 |
+| recommended_payment_method | 21/25 |
+| payment_plan | 20/25 |
+| earliest_date_for_full_payment | 19/25 |
 | spending_changes_needed | 21/25 |
 
 ## Mismatches
@@ -59,21 +59,11 @@ Each failing request has its starting balance, canonical cash flows, full balanc
 
 | Field | Expected | Actual |
 |---|---|---|
-| amount_safe_to_pay | 284.57 | 0.0 |
+| amount_safe_to_pay | 284.57 | 293.47 |
 | affordability_status | affordable_later | not_affordable |
 | recommended_payment_method | wait | not_recommended |
 | payment_plan | 2025-04-15:996.60 | none |
 | earliest_date_for_full_payment | 2025-04-15 |  |
-
-### request_09
-
-| Field | Expected | Actual |
-|---|---|---|
-| amount_safe_to_pay | 166.61 | 26.17 |
-| affordability_status | affordable_now | not_affordable |
-| recommended_payment_method | full_payment | not_recommended |
-| payment_plan | 2026-07-04:166.61 | none |
-| earliest_date_for_full_payment | 2026-07-04 |  |
 
 ### request_10
 
@@ -139,8 +129,8 @@ Each failing request has its starting balance, canonical cash flows, full balanc
 
 | Field | Expected | Actual |
 |---|---|---|
-| amount_safe_to_pay | 28820 | 25896.68 |
-| payment_plan | 2024-09-04:28820; 2024-09-15:10840 | 2024-09-04:25896.68; 2024-09-15:13763.32 |
+| amount_safe_to_pay | 28820 | 30760.72 |
+| payment_plan | 2024-09-04:28820; 2024-09-15:10840 | 2024-09-04:30760.72; 2024-09-15:8899.28 |
 
 ### request_20
 

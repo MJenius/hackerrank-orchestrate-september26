@@ -42,10 +42,14 @@ class BalanceSimulator:
                 raise ValueError(f'Invalid cash direction: {direction}')
             settlement = event['settlement_date']
             date.fromisoformat(settlement)
-            cash_date = event.get('cash_date', settlement)
-            # Pending debits are committed cash, reserved before optional payments.
-            if status == 'pending' and direction == 'debit':
-                cash_date = request_date
+            cash_date = event.get('cash_date')
+            if not cash_date:
+                # Pending debits must be reserved on their known future settlement date.
+                # If settlement date is unusable (< request_date), conservatively reserve on request_date.
+                if status == 'pending' and direction == 'debit':
+                    cash_date = settlement if settlement >= request_date else request_date
+                else:
+                    cash_date = settlement
             if cash_date not in deltas:
                 continue
             cents(event['amount'])

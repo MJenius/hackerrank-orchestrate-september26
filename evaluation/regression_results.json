@@ -1,14 +1,14 @@
 {
   "samples": 25,
   "field_matches": {
-    "amount_safe_to_pay": 2,
-    "affordability_status": 19,
-    "recommended_payment_method": 20,
-    "payment_plan": 19,
-    "earliest_date_for_full_payment": 18,
+    "amount_safe_to_pay": 3,
+    "affordability_status": 20,
+    "recommended_payment_method": 21,
+    "payment_plan": 20,
+    "earliest_date_for_full_payment": 19,
     "spending_changes_needed": 21
   },
-  "six_field_matches": 2,
+  "six_field_matches": 3,
   "validator_errors": 0,
   "mismatches": [
     {
@@ -86,7 +86,7 @@
       "differences": {
         "amount_safe_to_pay": {
           "expected": "284.57",
-          "actual": 0.0
+          "actual": 293.47
         },
         "affordability_status": {
           "expected": "affordable_later",
@@ -102,31 +102,6 @@
         },
         "earliest_date_for_full_payment": {
           "expected": "2025-04-15",
-          "actual": ""
-        }
-      }
-    },
-    {
-      "request_id": "request_09",
-      "differences": {
-        "amount_safe_to_pay": {
-          "expected": "166.61",
-          "actual": 26.17
-        },
-        "affordability_status": {
-          "expected": "affordable_now",
-          "actual": "not_affordable"
-        },
-        "recommended_payment_method": {
-          "expected": "full_payment",
-          "actual": "not_recommended"
-        },
-        "payment_plan": {
-          "expected": "2026-07-04:166.61",
-          "actual": "none"
-        },
-        "earliest_date_for_full_payment": {
-          "expected": "2026-07-04",
           "actual": ""
         }
       }
@@ -256,11 +231,11 @@
       "differences": {
         "amount_safe_to_pay": {
           "expected": "28820",
-          "actual": 25896.68
+          "actual": 30760.72
         },
         "payment_plan": {
           "expected": "2024-09-04:28820|2024-09-15:10840",
-          "actual": "2024-09-04:25896.68|2024-09-15:13763.32"
+          "actual": "2024-09-04:30760.72|2024-09-15:8899.28"
         }
       }
     },

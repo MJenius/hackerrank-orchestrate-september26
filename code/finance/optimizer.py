@@ -37,16 +37,17 @@ class FinancialOptimizer:
         available = min(round(balance * 100) - minimum for balance in balances.values())
         safe_amount = max(0, min(requested, available)) / 100 if baseline_safe else 0.0
 
-        # The earliest safe full-payment date is a property of the full 90-day
-        # trajectory and must not depend on whether paying today is already safe.
-        # Search the whole horizon conservatively: after paying the full request on
-        # day d, every subsequent day must still remain above the minimum balance.
-        suffix_low = float('inf')
+        # The earliest safe full-payment date is the first conservative projected date
+        # where one safe full payment can be made over the full 90-day trajectory.
+        # Find it via explicit trajectory simulation across the full horizon.
         earliest = None
-        for day, balance in reversed(list(balances.items())):
-            suffix_low = min(suffix_low, round(balance * 100))
-            if suffix_low - requested >= minimum:
-                earliest = day
+        for offset in range(91):
+            target_date = (start + timedelta(days=offset)).isoformat()
+            target_safe, _, _ = self.simulator.simulate_trajectory(
+                profile, request.request_date, future_events, {target_date: float(requested / 100)})
+            if target_safe:
+                earliest = target_date
+                break
 
         candidates = []
         rejected = []

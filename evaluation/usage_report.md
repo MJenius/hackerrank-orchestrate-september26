@@ -9,7 +9,7 @@
 - Average tokens per request: 0
 - Estimated total cost: USD 0.00
 - Estimated cost per request: USD 0.00
-- Runtime: 5.950 seconds
+- Runtime: 10.770 seconds
 - Output: output.csv
 - Validation: every row checked with profiles, supplied options, canonical events, and safety simulation.
 

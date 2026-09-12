@@ -1,0 +1,1798 @@
+﻿
+================================================================================
+request_02: expected_safe=17229139.2, actual_safe=17953975.41, diff=724836.21
+  user=user_02, currency=IDR
+  balance=60383889.2, min_balance=29158400.0
+  requested_amount=46018000.0, request_date=2025-08-05
+  desired_completion=2025-10-10
+  min_trajectory_cents=4711237541, minimum_cents=2915840000
+  available_cents=1795397541, formula_safe=17953975.41
+  baseline_safe=True
+  min_day=2025-08-13, min_day_balance=47112375.41
+  future_events: 43 total, 3 credits, 40 debits
+  CREDITS:
+    2025-08-15 PROJ REC salary 42750000.0 IDR [proj_sal_IDR_main_20250815] Confirmed or recurring salary
+    2025-09-15 PROJ REC salary 42750000.0 IDR [proj_sal_IDR_main_20250915] Confirmed or recurring salary
+    2025-10-15 PROJ REC salary 42750000.0 IDR [proj_sal_IDR_main_20251015] Confirmed or recurring salary
+  DEBITS:
+    2025-08-07 PROJ REC projected utilities 2141849.94 IDR [proj_event_138_20250807] Municipal utilities
+    2025-08-08 EXPL  pending shopping 1651100.0 IDR [event_185] Pending merchant debit
+    2025-08-08 PROJ REC projected insurance 1132400.0 IDR [proj_event_139_20250808] Household insurance
+    2025-08-09 PROJ REC projected education 3040000.0 IDR [proj_event_140_20250809] Course tuition
+    2025-08-09 PROJ REC projected groceries 2079368.25 IDR [proj_event_162_20250809] Supermarket basket
+    2025-08-11 PROJ REC projected healthcare 1538498.1 IDR [proj_event_141_20250811] Clinic payment
+    2025-08-12 PROJ REC projected transport 1318747.5 IDR [proj_event_175_20250812] Metro and bus fares
+    2025-08-13 PROJ REC projected cloud_storage 369550.0 IDR [proj_event_143_20250813] Shared storage plan
+    2025-08-15 PROJ REC projected entertainment 1352563.79 IDR [proj_event_142_20250815] Cinema and events
+    2025-08-19 PROJ REC projected groceries 2079368.25 IDR [proj_event_162_20250819] Supermarket basket
+    2025-08-20 PROJ REC projected dining 1043758.65 IDR [proj_event_184_20250820] Bakery and snacks
+    2025-08-26 PROJ REC projected transport 1318747.5 IDR [proj_event_175_20250826] Metro and bus fares
+    2025-08-29 PROJ REC projected groceries 2079368.25 IDR [proj_event_162_20250829] Supermarket basket
+    2025-09-04 PROJ REC projected housing 3534000.0 IDR [proj_event_144_20250904] Home repair reserve
+    2025-09-07 PROJ REC projected utilities 2141849.94 IDR [proj_event_138_20250907] Municipal utilities
+    2025-09-08 PROJ REC projected insurance 1132400.0 IDR [proj_event_139_20250908] Household insurance
+    2025-09-08 PROJ REC projected groceries 2079368.25 IDR [proj_event_162_20250908] Supermarket basket
+    2025-09-09 PROJ REC projected education 3040000.0 IDR [proj_event_140_20250909] Course tuition
+    2025-09-09 PROJ REC projected transport 1318747.5 IDR [proj_event_175_20250909] Metro and bus fares
+    2025-09-10 PROJ REC projected dining 1043758.65 IDR [proj_event_184_20250910] Bakery and snacks
+    2025-09-11 PROJ REC projected healthcare 1538498.1 IDR [proj_event_141_20250911] Clinic payment
+    2025-09-13 PROJ REC projected cloud_storage 369550.0 IDR [proj_event_143_20250913] Shared storage plan
+    2025-09-15 PROJ REC projected entertainment 1352563.79 IDR [proj_event_142_20250915] Cinema and events
+    2025-09-18 PROJ REC projected groceries 2079368.25 IDR [proj_event_162_20250918] Supermarket basket
+    2025-09-23 PROJ REC projected transport 1318747.5 IDR [proj_event_175_20250923] Metro and bus fares
+    2025-09-28 PROJ REC projected groceries 2079368.25 IDR [proj_event_162_20250928] Supermarket basket
+    2025-10-01 PROJ REC projected dining 1043758.65 IDR [proj_event_184_20251001] Bakery and snacks
+    2025-10-04 PROJ REC projected housing 3534000.0 IDR [proj_event_144_20251004] Home repair reserve
+    2025-10-07 PROJ REC projected utilities 2141849.94 IDR [proj_event_138_20251007] Municipal utilities
+    2025-10-07 PROJ REC projected transport 1318747.5 IDR [proj_event_175_20251007] Metro and bus fares
+    2025-10-08 PROJ REC projected insurance 1132400.0 IDR [proj_event_139_20251008] Household insurance
+    2025-10-08 PROJ REC projected groceries 2079368.25 IDR [proj_event_162_20251008] Supermarket basket
+    2025-10-09 PROJ REC projected education 3040000.0 IDR [proj_event_140_20251009] Course tuition
+    2025-10-11 PROJ REC projected healthcare 1538498.1 IDR [proj_event_141_20251011] Clinic payment
+    2025-10-13 PROJ REC projected cloud_storage 369550.0 IDR [proj_event_143_20251013] Shared storage plan
+    2025-10-15 PROJ REC projected entertainment 1352563.79 IDR [proj_event_142_20251015] Cinema and events
+    2025-10-18 PROJ REC projected groceries 2079368.25 IDR [proj_event_162_20251018] Supermarket basket
+    2025-10-21 PROJ REC projected transport 1318747.5 IDR [proj_event_175_20251021] Metro and bus fares
+    2025-10-22 PROJ REC projected dining 1043758.65 IDR [proj_event_184_20251022] Bakery and snacks
+    2025-10-28 PROJ REC projected groceries 2079368.25 IDR [proj_event_162_20251028] Supermarket basket
+  TRAJECTORY (first 10 and min area):
+    2025-08-05: 60383889.20
+    2025-08-06: 60383889.20
+    2025-08-07: 58242039.26
+    2025-08-08: 55458539.26
+    2025-08-09: 50339171.01
+    2025-08-10: 50339171.01
+    2025-08-11: 48800672.91
+    2025-08-12: 47481925.41
+    2025-08-13: 47112375.41
+    2025-08-14: 47112375.41
+  FIELD COMPARISON:
+    XX amount_safe_to_pay: expected=17229139.2, actual=17953975.41
+    OK affordability_status: expected=affordable_with_plan, actual=affordable_with_plan
+    OK recommended_payment_method: expected=installments, actual=installments
+    XX payment_plan: expected=, actual=2025-08-08:15952906.67|2025-09-07:15952906.67|2025-10-07:15952906.67
+    XX earliest_date_for_full_payment: expected=, actual=2025-09-15
+    OK spending_changes_needed: expected=none, actual=none
+
+================================================================================
+request_03: expected_safe=873000.0, actual_safe=980907.82, diff=107907.82
+  user=user_03, currency=IDR
+  balance=5810300.0, min_balance=2668700.0
+  requested_amount=5491000.0, request_date=2019-09-03
+  desired_completion=2019-11-15
+  min_trajectory_cents=364960782, minimum_cents=266870000
+  available_cents=98090782, formula_safe=980907.82
+  baseline_safe=True
+  min_day=2019-09-14, min_day_balance=3649607.82
+  future_events: 36 total, 3 credits, 33 debits
+  CREDITS:
+    2019-09-15 PROJ REC salary 4365000.0 IDR [proj_sal_IDR_main_20190915] Confirmed or recurring salary
+    2019-10-15 PROJ REC salary 4365000.0 IDR [proj_sal_IDR_main_20191015] Confirmed or recurring salary
+    2019-11-15 PROJ REC salary 4365000.0 IDR [proj_sal_IDR_main_20191115] Confirmed or recurring salary
+  DEBITS:
+    2019-09-04 PROJ REC projected rent 1140000.0 IDR [proj_event_212_20190904] Landlord standing order
+    2019-09-07 EXPL  pending healthcare 95000.0 IDR [event_254] Pending pharmacy card charge
+    2019-09-08 PROJ REC projected utilities 262344.55 IDR [proj_event_213_20190908] Water and power payment
+    2019-09-08 PROJ REC projected groceries 173004.74 IDR [proj_event_234_20190908] Neighbourhood grocer
+    2019-09-11 PROJ REC projected streaming 117800.0 IDR [proj_event_215_20190911] Video streaming plan
+    2019-09-14 PROJ REC projected cloud_storage 20900.0 IDR [proj_event_214_20190914] Shared storage plan
+    2019-09-14 PROJ REC projected shopping 180395.29 IDR [proj_event_216_20190914] Clothing and household items
+    2019-09-14 PROJ REC projected dining 171247.6 IDR [proj_event_252_20190914] Coffee shop
+    2019-09-18 PROJ REC projected groceries 173004.74 IDR [proj_event_234_20190918] Neighbourhood grocer
+    2019-09-18 PROJ REC projected transport 99961.13 IDR [proj_event_243_20190918] Rail pass
+    2019-09-28 PROJ REC projected groceries 173004.74 IDR [proj_event_234_20190928] Neighbourhood grocer
+    2019-10-04 PROJ REC projected rent 1140000.0 IDR [proj_event_212_20191004] Landlord standing order
+    2019-10-05 PROJ REC projected dining 171247.6 IDR [proj_event_252_20191005] Coffee shop
+    2019-10-08 PROJ REC projected utilities 262344.55 IDR [proj_event_213_20191008] Water and power payment
+    2019-10-08 PROJ REC projected groceries 173004.74 IDR [proj_event_234_20191008] Neighbourhood grocer
+    2019-10-09 PROJ REC projected transport 99961.13 IDR [proj_event_243_20191009] Rail pass
+    2019-10-11 PROJ REC projected streaming 117800.0 IDR [proj_event_215_20191011] Video streaming plan
+    2019-10-14 PROJ REC projected cloud_storage 20900.0 IDR [proj_event_214_20191014] Shared storage plan
+    2019-10-14 PROJ REC projected shopping 180395.29 IDR [proj_event_216_20191014] Clothing and household items
+    2019-10-18 PROJ REC projected groceries 173004.74 IDR [proj_event_234_20191018] Neighbourhood grocer
+    2019-10-26 PROJ REC projected dining 171247.6 IDR [proj_event_252_20191026] Coffee shop
+    2019-10-28 PROJ REC projected groceries 173004.74 IDR [proj_event_234_20191028] Neighbourhood grocer
+    2019-10-30 PROJ REC projected transport 99961.13 IDR [proj_event_243_20191030] Rail pass
+    2019-11-04 PROJ REC projected rent 1140000.0 IDR [proj_event_212_20191104] Landlord standing order
+    2019-11-07 PROJ REC projected groceries 173004.74 IDR [proj_event_234_20191107] Neighbourhood grocer
+    2019-11-08 PROJ REC projected utilities 262344.55 IDR [proj_event_213_20191108] Water and power payment
+    2019-11-11 PROJ REC projected streaming 117800.0 IDR [proj_event_215_20191111] Video streaming plan
+    2019-11-14 PROJ REC projected cloud_storage 20900.0 IDR [proj_event_214_20191114] Shared storage plan
+    2019-11-14 PROJ REC projected shopping 180395.29 IDR [proj_event_216_20191114] Clothing and household items
+    2019-11-16 PROJ REC projected dining 171247.6 IDR [proj_event_252_20191116] Coffee shop
+    2019-11-17 PROJ REC projected groceries 173004.74 IDR [proj_event_234_20191117] Neighbourhood grocer
+    2019-11-20 PROJ REC projected transport 99961.13 IDR [proj_event_243_20191120] Rail pass
+    2019-11-27 PROJ REC projected groceries 173004.74 IDR [proj_event_234_20191127] Neighbourhood grocer
+  TRAJECTORY (first 10 and min area):
+    2019-09-03: 5810300.00
+    2019-09-04: 4670300.00
+    2019-09-05: 4670300.00
+    2019-09-06: 4670300.00
+    2019-09-07: 4575300.00
+    2019-09-08: 4139950.71
+    2019-09-09: 4139950.71
+    2019-09-10: 4139950.71
+    2019-09-11: 4022150.71
+    2019-09-12: 4022150.71
+    2019-09-12: 4022150.71 
+    2019-09-13: 4022150.71 
+    2019-09-14: 3649607.82 <-- MIN
+    2019-09-15: 8014607.82 
+    2019-09-16: 8014607.82 
+  FIELD COMPARISON:
+    XX amount_safe_to_pay: expected=873000.0, actual=980907.82
+    OK affordability_status: expected=affordable_later, actual=affordable_later
+    OK recommended_payment_method: expected=wait, actual=wait
+    XX payment_plan: expected=, actual=2019-11-15:5491000
+    XX earliest_date_for_full_payment: expected=, actual=2019-11-15
+    OK spending_changes_needed: expected=none, actual=none
+
+================================================================================
+request_04: expected_safe=8401800.0, actual_safe=10724951.13, diff=2323151.13
+  user=user_04, currency=IDR
+  balance=52206950.0, min_balance=30686600.0
+  requested_amount=12693000.0, request_date=2024-06-04
+  desired_completion=2024-06-19
+  min_trajectory_cents=4141155113, minimum_cents=3068660000
+  available_cents=1072495113, formula_safe=10724951.13
+  baseline_safe=True
+  min_day=2024-06-13, min_day_balance=41411551.13
+  future_events: 55 total, 3 credits, 52 debits
+  CREDITS:
+    2024-06-15 PROJ REC salary 38190000.0 IDR [proj_sal_IDR_main_20240615] Confirmed or recurring salary
+    2024-07-15 PROJ REC salary 38190000.0 IDR [proj_sal_IDR_main_20240715] Confirmed or recurring salary
+    2024-08-15 PROJ REC salary 38190000.0 IDR [proj_sal_IDR_main_20240815] Confirmed or recurring salary
+  DEBITS:
+    2024-06-05 PROJ REC projected utilities 2004118.6 IDR [proj_event_286_20240605] Municipal utilities
+    2024-06-08 PROJ REC projected groceries 1453711.32 IDR [proj_event_317_20240608] Bulk pantry shop
+    2024-06-09 PROJ REC projected gym 1027900.0 IDR [proj_event_289_20240609] Gym membership
+    2024-06-09 PROJ REC projected transport 889762.96 IDR [proj_event_343_20240609] Rail pass
+    2024-06-10 PROJ REC projected music_subscription 332500.0 IDR [proj_event_287_20240610] Music service subscription
+    2024-06-10 PROJ REC projected dining 1774096.6 IDR [proj_event_356_20240610] Quick-service meal
+    2024-06-11 EXPL  scheduled education 1704300.0 IDR [event_357] Scheduled school fee
+    2024-06-12 PROJ REC projected delivery_membership 377150.0 IDR [proj_event_288_20240612] Food delivery membership
+    2024-06-13 PROJ REC projected entertainment 1231859.39 IDR [proj_event_290_20240613] Local event tickets
+    2024-06-15 PROJ REC projected groceries 1453711.32 IDR [proj_event_317_20240615] Bulk pantry shop
+    2024-06-16 PROJ REC projected transport 889762.96 IDR [proj_event_343_20240616] Rail pass
+    2024-06-22 PROJ REC projected groceries 1453711.32 IDR [proj_event_317_20240622] Bulk pantry shop
+    2024-06-23 PROJ REC projected transport 889762.96 IDR [proj_event_343_20240623] Rail pass
+    2024-06-24 PROJ REC projected dining 1774096.6 IDR [proj_event_356_20240624] Quick-service meal
+    2024-06-29 PROJ REC projected groceries 1453711.32 IDR [proj_event_317_20240629] Bulk pantry shop
+    2024-06-30 PROJ REC projected transport 889762.96 IDR [proj_event_343_20240630] Rail pass
+    2024-07-01 PROJ REC projected rent 12293000.0 IDR [proj_event_291_20240701] Residential rent payment
+    2024-07-05 PROJ REC projected utilities 2004118.6 IDR [proj_event_286_20240705] Municipal utilities
+    2024-07-06 PROJ REC projected groceries 1453711.32 IDR [proj_event_317_20240706] Bulk pantry shop
+    2024-07-07 PROJ REC projected transport 889762.96 IDR [proj_event_343_20240707] Rail pass
+    2024-07-08 PROJ REC projected dining 1774096.6 IDR [proj_event_356_20240708] Quick-service meal
+    2024-07-09 PROJ REC projected gym 1027900.0 IDR [proj_event_289_20240709] Gym membership
+    2024-07-10 PROJ REC projected music_subscription 332500.0 IDR [proj_event_287_20240710] Music service subscription
+    2024-07-12 PROJ REC projected delivery_membership 377150.0 IDR [proj_event_288_20240712] Food delivery membership
+    2024-07-13 PROJ REC projected entertainment 1231859.39 IDR [proj_event_290_20240713] Local event tickets
+    2024-07-13 PROJ REC projected groceries 1453711.32 IDR [proj_event_317_20240713] Bulk pantry shop
+    2024-07-14 PROJ REC projected transport 889762.96 IDR [proj_event_343_20240714] Rail pass
+    2024-07-20 PROJ REC projected groceries 1453711.32 IDR [proj_event_317_20240720] Bulk pantry shop
+    2024-07-21 PROJ REC projected transport 889762.96 IDR [proj_event_343_20240721] Rail pass
+    2024-07-22 PROJ REC projected dining 1774096.6 IDR [proj_event_356_20240722] Quick-service meal
+    2024-07-27 PROJ REC projected groceries 1453711.32 IDR [proj_event_317_20240727] Bulk pantry shop
+    2024-07-28 PROJ REC projected transport 889762.96 IDR [proj_event_343_20240728] Rail pass
+    2024-08-01 PROJ REC projected rent 12293000.0 IDR [proj_event_291_20240801] Residential rent payment
+    2024-08-03 PROJ REC projected groceries 1453711.32 IDR [proj_event_317_20240803] Bulk pantry shop
+    2024-08-04 PROJ REC projected transport 889762.96 IDR [proj_event_343_20240804] Rail pass
+    2024-08-05 PROJ REC projected utilities 2004118.6 IDR [proj_event_286_20240805] Municipal utilities
+    2024-08-05 PROJ REC projected dining 1774096.6 IDR [proj_event_356_20240805] Quick-service meal
+    2024-08-09 PROJ REC projected gym 1027900.0 IDR [proj_event_289_20240809] Gym membership
+    2024-08-10 PROJ REC projected music_subscription 332500.0 IDR [proj_event_287_20240810] Music service subscription
+    2024-08-10 PROJ REC projected groceries 1453711.32 IDR [proj_event_317_20240810] Bulk pantry shop
+    2024-08-11 PROJ REC projected transport 889762.96 IDR [proj_event_343_20240811] Rail pass
+    2024-08-12 PROJ REC projected delivery_membership 377150.0 IDR [proj_event_288_20240812] Food delivery membership
+    2024-08-13 PROJ REC projected entertainment 1231859.39 IDR [proj_event_290_20240813] Local event tickets
+    2024-08-17 PROJ REC projected groceries 1453711.32 IDR [proj_event_317_20240817] Bulk pantry shop
+    2024-08-18 PROJ REC projected transport 889762.96 IDR [proj_event_343_20240818] Rail pass
+    2024-08-19 PROJ REC projected dining 1774096.6 IDR [proj_event_356_20240819] Quick-service meal
+    2024-08-24 PROJ REC projected groceries 1453711.32 IDR [proj_event_317_20240824] Bulk pantry shop
+    2024-08-25 PROJ REC projected transport 889762.96 IDR [proj_event_343_20240825] Rail pass
+    2024-08-31 PROJ REC projected groceries 1453711.32 IDR [proj_event_317_20240831] Bulk pantry shop
+    2024-09-01 PROJ REC projected rent 12293000.0 IDR [proj_event_291_20240901] Residential rent payment
+    2024-09-01 PROJ REC projected transport 889762.96 IDR [proj_event_343_20240901] Rail pass
+    2024-09-02 PROJ REC projected dining 1774096.6 IDR [proj_event_356_20240902] Quick-service meal
+  TRAJECTORY (first 10 and min area):
+    2024-06-04: 52206950.00
+    2024-06-05: 50202831.40
+    2024-06-06: 50202831.40
+    2024-06-07: 50202831.40
+    2024-06-08: 48749120.08
+    2024-06-09: 46831457.12
+    2024-06-10: 44724860.52
+    2024-06-11: 43020560.52
+    2024-06-12: 42643410.52
+    2024-06-13: 41411551.13
+  FIELD COMPARISON:
+    XX amount_safe_to_pay: expected=8401800.0, actual=10724951.13
+    OK affordability_status: expected=affordable_later, actual=affordable_later
+    OK recommended_payment_method: expected=wait, actual=wait
+    XX payment_plan: expected=, actual=2024-06-15:12693000
+    XX earliest_date_for_full_payment: expected=, actual=2024-06-15
+    OK spending_changes_needed: expected=none, actual=none
+
+================================================================================
+request_05: expected_safe=737.0, actual_safe=0.0, diff=-737.00
+  user=user_05, currency=ZAR
+  balance=46475.1, min_balance=13100.0
+  requested_amount=15488.0, request_date=2025-11-06
+  desired_completion=2026-01-12
+  min_trajectory_cents=835186, minimum_cents=1310000
+  available_cents=-474814, formula_safe=0.0
+  baseline_safe=False
+  min_day=2026-02-04, min_day_balance=8351.86
+  future_events: 41 total, 0 credits, 41 debits
+  CREDITS:
+  DEBITS:
+    2025-11-06 PROJ REC projected utilities 713.71 ZAR [proj_event_392_20251106] Municipal utilities
+    2025-11-10 PROJ REC projected healthcare 722.37 ZAR [proj_event_394_20251110] Therapy appointment
+    2025-11-11 PROJ REC projected debt_repayment 968.0 ZAR [proj_event_393_20251111] Vehicle loan payment
+    2025-11-11 PROJ REC projected groceries 720.51 ZAR [proj_event_424_20251111] Fresh food shop
+    2025-11-12 PROJ REC projected cloud_storage 113.3 ZAR [proj_event_396_20251112] Cloud storage plan
+    2025-11-12 PROJ REC projected shopping 362.09 ZAR [proj_event_397_20251112] Personal shopping
+    2025-11-12 PROJ REC projected transport 383.0 ZAR [proj_event_437_20251112] Rail pass
+    2025-11-13 PROJ REC projected family_support 840.4 ZAR [proj_event_395_20251113] Dependent care payment
+    2025-11-18 PROJ REC projected groceries 720.51 ZAR [proj_event_424_20251118] Fresh food shop
+    2025-11-25 PROJ REC projected groceries 720.51 ZAR [proj_event_424_20251125] Fresh food shop
+    2025-11-26 PROJ REC projected transport 383.0 ZAR [proj_event_437_20251126] Rail pass
+    2025-12-02 PROJ REC projected rent 4972.0 ZAR [proj_event_398_20251202] Apartment rent transfer
+    2025-12-02 PROJ REC projected groceries 720.51 ZAR [proj_event_424_20251202] Fresh food shop
+    2025-12-06 PROJ REC projected utilities 713.71 ZAR [proj_event_392_20251206] Municipal utilities
+    2025-12-09 PROJ REC projected groceries 720.51 ZAR [proj_event_424_20251209] Fresh food shop
+    2025-12-10 PROJ REC projected healthcare 722.37 ZAR [proj_event_394_20251210] Therapy appointment
+    2025-12-10 PROJ REC projected transport 383.0 ZAR [proj_event_437_20251210] Rail pass
+    2025-12-11 PROJ REC projected debt_repayment 968.0 ZAR [proj_event_393_20251211] Vehicle loan payment
+    2025-12-12 PROJ REC projected cloud_storage 113.3 ZAR [proj_event_396_20251212] Cloud storage plan
+    2025-12-12 PROJ REC projected shopping 362.09 ZAR [proj_event_397_20251212] Personal shopping
+    2025-12-13 PROJ REC projected family_support 840.4 ZAR [proj_event_395_20251213] Dependent care payment
+    2025-12-16 PROJ REC projected groceries 720.51 ZAR [proj_event_424_20251216] Fresh food shop
+    2025-12-23 PROJ REC projected groceries 720.51 ZAR [proj_event_424_20251223] Fresh food shop
+    2025-12-24 PROJ REC projected transport 383.0 ZAR [proj_event_437_20251224] Rail pass
+    2025-12-30 PROJ REC projected groceries 720.51 ZAR [proj_event_424_20251230] Fresh food shop
+    2026-01-02 PROJ REC projected rent 4972.0 ZAR [proj_event_398_20260102] Apartment rent transfer
+    2026-01-06 PROJ REC projected utilities 713.71 ZAR [proj_event_392_20260106] Municipal utilities
+    2026-01-06 PROJ REC projected groceries 720.51 ZAR [proj_event_424_20260106] Fresh food shop
+    2026-01-07 PROJ REC projected transport 383.0 ZAR [proj_event_437_20260107] Rail pass
+    2026-01-10 PROJ REC projected healthcare 722.37 ZAR [proj_event_394_20260110] Therapy appointment
+    2026-01-11 PROJ REC projected debt_repayment 968.0 ZAR [proj_event_393_20260111] Vehicle loan payment
+    2026-01-12 PROJ REC projected cloud_storage 113.3 ZAR [proj_event_396_20260112] Cloud storage plan
+    2026-01-12 PROJ REC projected shopping 362.09 ZAR [proj_event_397_20260112] Personal shopping
+    2026-01-13 PROJ REC projected family_support 840.4 ZAR [proj_event_395_20260113] Dependent care payment
+    2026-01-13 PROJ REC projected groceries 720.51 ZAR [proj_event_424_20260113] Fresh food shop
+    2026-01-20 PROJ REC projected groceries 720.51 ZAR [proj_event_424_20260120] Fresh food shop
+    2026-01-21 PROJ REC projected transport 383.0 ZAR [proj_event_437_20260121] Rail pass
+    2026-01-27 PROJ REC projected groceries 720.51 ZAR [proj_event_424_20260127] Fresh food shop
+    2026-02-02 PROJ REC projected rent 4972.0 ZAR [proj_event_398_20260202] Apartment rent transfer
+    2026-02-03 PROJ REC projected groceries 720.51 ZAR [proj_event_424_20260203] Fresh food shop
+    2026-02-04 PROJ REC projected transport 383.0 ZAR [proj_event_437_20260204] Rail pass
+  TRAJECTORY (first 10 and min area):
+    2025-11-06: 45761.39
+    2025-11-07: 45761.39
+    2025-11-08: 45761.39
+    2025-11-09: 45761.39
+    2025-11-10: 45039.02
+    2025-11-11: 43350.51
+    2025-11-12: 42492.12
+    2025-11-13: 41651.72
+    2025-11-14: 41651.72
+    2025-11-15: 41651.72
+    2026-02-02: 9455.37 
+    2026-02-03: 8734.86 
+    2026-02-04: 8351.86 <-- MIN
+  FIELD COMPARISON:
+    XX amount_safe_to_pay: expected=737.0, actual=0.0
+    OK affordability_status: expected=not_affordable, actual=not_affordable
+    OK recommended_payment_method: expected=not_recommended, actual=not_recommended
+    XX payment_plan: expected=, actual=none
+    OK earliest_date_for_full_payment: expected=, actual=
+    OK spending_changes_needed: expected=none, actual=none
+
+================================================================================
+request_06: expected_safe=603.3, actual_safe=521.63, diff=-81.67
+  user=user_06, currency=EUR
+  balance=1942.4, min_balance=800.0
+  requested_amount=620.4, request_date=2026-01-03
+  desired_completion=2026-01-14
+  min_trajectory_cents=132163, minimum_cents=80000
+  available_cents=52163, formula_safe=521.63
+  baseline_safe=True
+  min_day=2026-01-13, min_day_balance=1321.63
+  future_events: 66 total, 3 credits, 63 debits
+  CREDITS:
+    2026-01-15 PROJ REC salary 1037.52 EUR [proj_sal_EUR_main_20260115] Confirmed or recurring salary
+    2026-02-15 PROJ REC salary 1441.0 EUR [proj_sal_EUR_main_20260215] Confirmed or recurring salary
+    2026-03-15 PROJ REC salary 1441.0 EUR [proj_sal_EUR_main_20260315] Confirmed or recurring salary
+  DEBITS:
+    2026-01-03 PROJ REC projected rent 254.1 EUR [proj_event_472_20260103] Monthly rent
+    2026-01-03 PROJ REC projected transport 28.29 EUR [proj_event_531_20260103] Parking and tolls
+    2026-01-04 PROJ REC projected dining 47.33 EUR [proj_event_556_20260104] Weekend food delivery
+    2026-01-07 PROJ REC projected utilities 51.86 EUR [proj_event_473_20260107] Water and power payment
+    2026-01-07 PROJ REC projected groceries 45.4 EUR [proj_event_496_20260107] Bulk pantry shop
+    2026-01-08 PROJ REC projected insurance 26.0 EUR [proj_event_474_20260108] Vehicle insurance premium
+    2026-01-08 PROJ REC projected transport 28.29 EUR [proj_event_531_20260108] Parking and tolls
+    2026-01-10 PROJ REC projected streaming 19.0 EUR [proj_event_476_20260110] Family streaming plan
+    2026-01-11 PROJ REC projected dining 47.33 EUR [proj_event_556_20260111] Weekend food delivery
+    2026-01-13 PROJ REC projected cloud_storage 5.0 EUR [proj_event_475_20260113] Shared storage plan
+    2026-01-13 PROJ REC projected shopping 39.88 EUR [proj_event_477_20260113] Household shopping
+    2026-01-13 PROJ REC projected transport 28.29 EUR [proj_event_531_20260113] Parking and tolls
+    2026-01-15 PROJ REC projected entertainment 38.33 EUR [proj_event_478_20260115] Monthly entertainment spend
+    2026-01-17 PROJ REC projected groceries 45.4 EUR [proj_event_496_20260117] Bulk pantry shop
+    2026-01-18 PROJ REC projected transport 28.29 EUR [proj_event_531_20260118] Parking and tolls
+    2026-01-18 PROJ REC projected dining 47.33 EUR [proj_event_556_20260118] Weekend food delivery
+    2026-01-23 PROJ REC projected transport 28.29 EUR [proj_event_531_20260123] Parking and tolls
+    2026-01-25 PROJ REC projected dining 47.33 EUR [proj_event_556_20260125] Weekend food delivery
+    2026-01-27 PROJ REC projected groceries 45.4 EUR [proj_event_496_20260127] Bulk pantry shop
+    2026-01-28 PROJ REC projected transport 28.29 EUR [proj_event_531_20260128] Parking and tolls
+    2026-02-01 PROJ REC projected dining 47.33 EUR [proj_event_556_20260201] Weekend food delivery
+    2026-02-02 PROJ REC projected transport 28.29 EUR [proj_event_531_20260202] Parking and tolls
+    2026-02-03 PROJ REC projected rent 254.1 EUR [proj_event_472_20260203] Monthly rent
+    2026-02-06 PROJ REC projected groceries 45.4 EUR [proj_event_496_20260206] Bulk pantry shop
+    2026-02-07 PROJ REC projected utilities 51.86 EUR [proj_event_473_20260207] Water and power payment
+    2026-02-07 PROJ REC projected transport 28.29 EUR [proj_event_531_20260207] Parking and tolls
+    2026-02-08 PROJ REC projected insurance 26.0 EUR [proj_event_474_20260208] Vehicle insurance premium
+    2026-02-08 PROJ REC projected dining 47.33 EUR [proj_event_556_20260208] Weekend food delivery
+    2026-02-10 PROJ REC projected streaming 19.0 EUR [proj_event_476_20260210] Family streaming plan
+    2026-02-12 PROJ REC projected transport 28.29 EUR [proj_event_531_20260212] Parking and tolls
+    2026-02-13 PROJ REC projected cloud_storage 5.0 EUR [proj_event_475_20260213] Shared storage plan
+    2026-02-13 PROJ REC projected shopping 39.88 EUR [proj_event_477_20260213] Household shopping
+    2026-02-15 PROJ REC projected entertainment 38.33 EUR [proj_event_478_20260215] Monthly entertainment spend
+    2026-02-15 PROJ REC projected dining 47.33 EUR [proj_event_556_20260215] Weekend food delivery
+    2026-02-16 PROJ REC projected groceries 45.4 EUR [proj_event_496_20260216] Bulk pantry shop
+    2026-02-17 PROJ REC projected transport 28.29 EUR [proj_event_531_20260217] Parking and tolls
+    2026-02-22 PROJ REC projected transport 28.29 EUR [proj_event_531_20260222] Parking and tolls
+    2026-02-22 PROJ REC projected dining 47.33 EUR [proj_event_556_20260222] Weekend food delivery
+    2026-02-26 PROJ REC projected groceries 45.4 EUR [proj_event_496_20260226] Bulk pantry shop
+    2026-02-27 PROJ REC projected transport 28.29 EUR [proj_event_531_20260227] Parking and tolls
+    2026-03-01 PROJ REC projected dining 47.33 EUR [proj_event_556_20260301] Weekend food delivery
+    2026-03-03 PROJ REC projected rent 254.1 EUR [proj_event_472_20260303] Monthly rent
+    2026-03-04 PROJ REC projected transport 28.29 EUR [proj_event_531_20260304] Parking and tolls
+    2026-03-07 PROJ REC projected utilities 51.86 EUR [proj_event_473_20260307] Water and power payment
+    2026-03-08 PROJ REC projected insurance 26.0 EUR [proj_event_474_20260308] Vehicle insurance premium
+    2026-03-08 PROJ REC projected groceries 45.4 EUR [proj_event_496_20260308] Bulk pantry shop
+    2026-03-08 PROJ REC projected dining 47.33 EUR [proj_event_556_20260308] Weekend food delivery
+    2026-03-09 PROJ REC projected transport 28.29 EUR [proj_event_531_20260309] Parking and tolls
+    2026-03-10 PROJ REC projected streaming 19.0 EUR [proj_event_476_20260310] Family streaming plan
+    2026-03-13 PROJ REC projected cloud_storage 5.0 EUR [proj_event_475_20260313] Shared storage plan
+    2026-03-13 PROJ REC projected shopping 39.88 EUR [proj_event_477_20260313] Household shopping
+    2026-03-14 PROJ REC projected transport 28.29 EUR [proj_event_531_20260314] Parking and tolls
+    2026-03-15 PROJ REC projected entertainment 38.33 EUR [proj_event_478_20260315] Monthly entertainment spend
+    2026-03-15 PROJ REC projected dining 47.33 EUR [proj_event_556_20260315] Weekend food delivery
+    2026-03-18 PROJ REC projected groceries 45.4 EUR [proj_event_496_20260318] Bulk pantry shop
+    2026-03-19 PROJ REC projected transport 28.29 EUR [proj_event_531_20260319] Parking and tolls
+    2026-03-22 PROJ REC projected dining 47.33 EUR [proj_event_556_20260322] Weekend food delivery
+    2026-03-24 PROJ REC projected transport 28.29 EUR [proj_event_531_20260324] Parking and tolls
+    2026-03-28 PROJ REC projected groceries 45.4 EUR [proj_event_496_20260328] Bulk pantry shop
+    2026-03-29 PROJ REC projected transport 28.29 EUR [proj_event_531_20260329] Parking and tolls
+    2026-03-29 PROJ REC projected dining 47.33 EUR [proj_event_556_20260329] Weekend food delivery
+    2026-04-03 PROJ REC projected rent 254.1 EUR [proj_event_472_20260403] Monthly rent
+    2026-04-03 PROJ REC projected transport 28.29 EUR [proj_event_531_20260403] Parking and tolls
+  TRAJECTORY (first 10 and min area):
+    2026-01-03: 1660.01
+    2026-01-04: 1612.68
+    2026-01-05: 1612.68
+    2026-01-06: 1612.68
+    2026-01-07: 1515.42
+    2026-01-08: 1461.13
+    2026-01-09: 1461.13
+    2026-01-10: 1442.13
+    2026-01-11: 1394.80
+    2026-01-12: 1394.80
+    2026-01-11: 1394.80 
+    2026-01-12: 1394.80 
+    2026-01-13: 1321.63 <-- MIN
+    2026-01-14: 1321.63 
+    2026-01-15: 2320.82 
+  FIELD COMPARISON:
+    XX amount_safe_to_pay: expected=603.3, actual=521.63
+    XX affordability_status: expected=affordable_with_plan, actual=not_affordable
+    XX recommended_payment_method: expected=full_payment, actual=not_recommended
+    XX payment_plan: expected=, actual=none
+    XX earliest_date_for_full_payment: expected=, actual=2026-01-15
+    XX spending_changes_needed: expected=stop:event_476, actual=none
+
+================================================================================
+request_07: expected_safe=87170.56, actual_safe=86703.56, diff=-467.00
+  user=user_07, currency=INR
+  balance=218945.56, min_balance=93000.0
+  requested_amount=197400.0, request_date=2024-09-05
+  desired_completion=2024-11-14
+  min_trajectory_cents=17970356, minimum_cents=9300000
+  available_cents=8670356, formula_safe=86703.56
+  baseline_safe=True
+  min_day=2024-09-20, min_day_balance=179703.56
+  future_events: 29 total, 3 credits, 26 debits
+  CREDITS:
+    2024-09-23 PROJ REC salary 149000.0 INR [proj_sal_INR_main_20240923] Confirmed or recurring salary
+    2024-10-23 PROJ REC salary 149000.0 INR [proj_sal_INR_main_20241023] Confirmed or recurring salary
+    2024-11-23 PROJ REC salary 149000.0 INR [proj_sal_INR_main_20241123] Confirmed or recurring salary
+  DEBITS:
+    2024-09-08 PROJ REC projected utilities 6209.57 INR [proj_event_580_20240908] Electricity bill
+    2024-09-12 PROJ REC projected groceries 7085.05 INR [proj_event_596_20240912] Household groceries
+    2024-09-13 PROJ REC projected debt_repayment 15650.0 INR [proj_event_581_20240913] Personal loan payment
+    2024-09-13 PROJ REC projected music_subscription 1005.0 INR [proj_event_582_20240913] Music subscription
+    2024-09-16 PROJ REC projected dining 6146.76 INR [proj_event_614_20240916] Bakery and snacks
+    2024-09-20 PROJ REC projected transport 3145.62 INR [proj_event_605_20240920] Commuter pass
+    2024-09-26 PROJ REC projected groceries 7085.05 INR [proj_event_596_20240926] Household groceries
+    2024-10-04 PROJ REC projected rent 34200.0 INR [proj_event_583_20241004] Monthly rent
+    2024-10-07 PROJ REC projected dining 6146.76 INR [proj_event_614_20241007] Bakery and snacks
+    2024-10-08 PROJ REC projected utilities 6209.57 INR [proj_event_580_20241008] Electricity bill
+    2024-10-10 PROJ REC projected groceries 7085.05 INR [proj_event_596_20241010] Household groceries
+    2024-10-11 PROJ REC projected transport 3145.62 INR [proj_event_605_20241011] Commuter pass
+    2024-10-13 PROJ REC projected debt_repayment 15650.0 INR [proj_event_581_20241013] Personal loan payment
+    2024-10-13 PROJ REC projected music_subscription 1005.0 INR [proj_event_582_20241013] Music subscription
+    2024-10-24 PROJ REC projected groceries 7085.05 INR [proj_event_596_20241024] Household groceries
+    2024-10-28 PROJ REC projected dining 6146.76 INR [proj_event_614_20241028] Bakery and snacks
+    2024-11-01 PROJ REC projected transport 3145.62 INR [proj_event_605_20241101] Commuter pass
+    2024-11-04 PROJ REC projected rent 34200.0 INR [proj_event_583_20241104] Monthly rent
+    2024-11-07 PROJ REC projected groceries 7085.05 INR [proj_event_596_20241107] Household groceries
+    2024-11-08 PROJ REC projected utilities 6209.57 INR [proj_event_580_20241108] Electricity bill
+    2024-11-13 PROJ REC projected debt_repayment 15650.0 INR [proj_event_581_20241113] Personal loan payment
+    2024-11-13 PROJ REC projected music_subscription 1005.0 INR [proj_event_582_20241113] Music subscription
+    2024-11-18 PROJ REC projected dining 6146.76 INR [proj_event_614_20241118] Bakery and snacks
+    2024-11-21 PROJ REC projected groceries 7085.05 INR [proj_event_596_20241121] Household groceries
+    2024-11-22 PROJ REC projected transport 3145.62 INR [proj_event_605_20241122] Commuter pass
+    2024-12-04 PROJ REC projected rent 34200.0 INR [proj_event_583_20241204] Monthly rent
+  TRAJECTORY (first 10 and min area):
+    2024-09-05: 218945.56
+    2024-09-06: 218945.56
+    2024-09-07: 218945.56
+    2024-09-08: 212735.99
+    2024-09-09: 212735.99
+    2024-09-10: 212735.99
+    2024-09-11: 212735.99
+    2024-09-12: 205650.94
+    2024-09-13: 188995.94
+    2024-09-14: 188995.94
+    2024-09-18: 182849.18 
+    2024-09-19: 182849.18 
+    2024-09-20: 179703.56 <-- MIN
+    2024-09-21: 179703.56 
+    2024-09-22: 179703.56 
+  FIELD COMPARISON:
+    XX amount_safe_to_pay: expected=87170.56, actual=86703.56
+    OK affordability_status: expected=affordable_with_plan, actual=affordable_with_plan
+    OK recommended_payment_method: expected=installments, actual=installments
+    XX payment_plan: expected=, actual=2024-09-12:68432|2024-10-10:68432|2024-11-07:68432
+    XX earliest_date_for_full_payment: expected=, actual=2024-10-23
+    OK spending_changes_needed: expected=none, actual=none
+
+================================================================================
+request_08: expected_safe=284.57, actual_safe=293.47, diff=8.90
+  user=user_08, currency=EUR
+  balance=1536.57, min_balance=800.0
+  requested_amount=996.6, request_date=2025-02-07
+  desired_completion=2025-04-15
+  min_trajectory_cents=109347, minimum_cents=80000
+  available_cents=29347, formula_safe=293.47
+  baseline_safe=True
+  min_day=2025-02-13, min_day_balance=1093.47
+  future_events: 55 total, 3 credits, 52 debits
+  CREDITS:
+    2025-02-15 PROJ REC salary 1422.85 EUR [proj_sal_EUR_main_20250215] Confirmed or recurring salary
+    2025-03-15 PROJ REC salary 1422.85 EUR [proj_sal_EUR_main_20250315] Confirmed or recurring salary
+    2025-04-15 PROJ REC salary 1422.85 EUR [proj_sal_EUR_main_20250415] Confirmed or recurring salary
+  DEBITS:
+    2025-02-07 PROJ REC projected education 89.0 EUR [proj_event_646_20250207] School fee payment
+    2025-02-10 PROJ REC projected debt_repayment 177.0 EUR [proj_event_647_20250210] Personal loan payment
+    2025-02-10 PROJ REC projected music_subscription 14.0 EUR [proj_event_648_20250210] Music subscription
+    2025-02-11 PROJ REC projected groceries 55.02 EUR [proj_event_677_20250211] Weekly produce market
+    2025-02-12 PROJ REC projected delivery_membership 24.0 EUR [proj_event_649_20250212] Grocery delivery membership
+    2025-02-12 PROJ REC projected transport 35.98 EUR [proj_event_703_20250212] Fuel refill
+    2025-02-13 PROJ REC projected dining 48.1 EUR [proj_event_716_20250213] Bakery and snacks
+    2025-02-18 PROJ REC projected groceries 55.02 EUR [proj_event_677_20250218] Weekly produce market
+    2025-02-19 PROJ REC projected transport 35.98 EUR [proj_event_703_20250219] Fuel refill
+    2025-02-25 PROJ REC projected groceries 55.02 EUR [proj_event_677_20250225] Weekly produce market
+    2025-02-26 PROJ REC projected transport 35.98 EUR [proj_event_703_20250226] Fuel refill
+    2025-02-27 PROJ REC projected dining 48.1 EUR [proj_event_716_20250227] Bakery and snacks
+    2025-03-01 PROJ REC projected rent 467.5 EUR [proj_event_650_20250301] Apartment rent transfer
+    2025-03-04 PROJ REC projected groceries 55.02 EUR [proj_event_677_20250304] Weekly produce market
+    2025-03-05 PROJ REC projected utilities 80.55 EUR [proj_event_651_20250305] Municipal utilities
+    2025-03-05 PROJ REC projected transport 35.98 EUR [proj_event_703_20250305] Fuel refill
+    2025-03-07 PROJ REC projected education 89.0 EUR [proj_event_646_20250307] School fee payment
+    2025-03-10 PROJ REC projected debt_repayment 177.0 EUR [proj_event_647_20250310] Personal loan payment
+    2025-03-10 PROJ REC projected music_subscription 14.0 EUR [proj_event_648_20250310] Music subscription
+    2025-03-11 PROJ REC projected groceries 55.02 EUR [proj_event_677_20250311] Weekly produce market
+    2025-03-12 PROJ REC projected delivery_membership 24.0 EUR [proj_event_649_20250312] Grocery delivery membership
+    2025-03-12 PROJ REC projected transport 35.98 EUR [proj_event_703_20250312] Fuel refill
+    2025-03-13 PROJ REC projected dining 48.1 EUR [proj_event_716_20250313] Bakery and snacks
+    2025-03-18 PROJ REC projected groceries 55.02 EUR [proj_event_677_20250318] Weekly produce market
+    2025-03-19 PROJ REC projected transport 35.98 EUR [proj_event_703_20250319] Fuel refill
+    2025-03-25 PROJ REC projected groceries 55.02 EUR [proj_event_677_20250325] Weekly produce market
+    2025-03-26 PROJ REC projected transport 35.98 EUR [proj_event_703_20250326] Fuel refill
+    2025-03-27 PROJ REC projected dining 48.1 EUR [proj_event_716_20250327] Bakery and snacks
+    2025-04-01 PROJ REC projected rent 467.5 EUR [proj_event_650_20250401] Apartment rent transfer
+    2025-04-01 PROJ REC projected groceries 55.02 EUR [proj_event_677_20250401] Weekly produce market
+    2025-04-02 PROJ REC projected transport 35.98 EUR [proj_event_703_20250402] Fuel refill
+    2025-04-05 PROJ REC projected utilities 80.55 EUR [proj_event_651_20250405] Municipal utilities
+    2025-04-07 PROJ REC projected education 89.0 EUR [proj_event_646_20250407] School fee payment
+    2025-04-08 PROJ REC projected groceries 55.02 EUR [proj_event_677_20250408] Weekly produce market
+    2025-04-09 PROJ REC projected transport 35.98 EUR [proj_event_703_20250409] Fuel refill
+    2025-04-10 PROJ REC projected debt_repayment 177.0 EUR [proj_event_647_20250410] Personal loan payment
+    2025-04-10 PROJ REC projected music_subscription 14.0 EUR [proj_event_648_20250410] Music subscription
+    2025-04-10 PROJ REC projected dining 48.1 EUR [proj_event_716_20250410] Bakery and snacks
+    2025-04-12 PROJ REC projected delivery_membership 24.0 EUR [proj_event_649_20250412] Grocery delivery membership
+    2025-04-15 PROJ REC projected groceries 55.02 EUR [proj_event_677_20250415] Weekly produce market
+    2025-04-16 PROJ REC projected transport 35.98 EUR [proj_event_703_20250416] Fuel refill
+    2025-04-22 PROJ REC projected groceries 55.02 EUR [proj_event_677_20250422] Weekly produce market
+    2025-04-23 PROJ REC projected transport 35.98 EUR [proj_event_703_20250423] Fuel refill
+    2025-04-24 PROJ REC projected dining 48.1 EUR [proj_event_716_20250424] Bakery and snacks
+    2025-04-29 PROJ REC projected groceries 55.02 EUR [proj_event_677_20250429] Weekly produce market
+    2025-04-30 PROJ REC projected transport 35.98 EUR [proj_event_703_20250430] Fuel refill
+    2025-05-01 PROJ REC projected rent 467.5 EUR [proj_event_650_20250501] Apartment rent transfer
+    2025-05-05 PROJ REC projected utilities 80.55 EUR [proj_event_651_20250505] Municipal utilities
+    2025-05-06 PROJ REC projected groceries 55.02 EUR [proj_event_677_20250506] Weekly produce market
+    2025-05-07 PROJ REC projected education 89.0 EUR [proj_event_646_20250507] School fee payment
+    2025-05-07 PROJ REC projected transport 35.98 EUR [proj_event_703_20250507] Fuel refill
+    2025-05-08 PROJ REC projected dining 48.1 EUR [proj_event_716_20250508] Bakery and snacks
+  TRAJECTORY (first 10 and min area):
+    2025-02-07: 1447.57
+    2025-02-08: 1447.57
+    2025-02-09: 1447.57
+    2025-02-10: 1256.57
+    2025-02-11: 1201.55
+    2025-02-12: 1141.57
+    2025-02-13: 1093.47
+    2025-02-14: 1093.47
+    2025-02-15: 2516.32
+    2025-02-16: 2516.32
+  FIELD COMPARISON:
+    XX amount_safe_to_pay: expected=284.57, actual=293.47
+    XX affordability_status: expected=affordable_later, actual=not_affordable
+    XX recommended_payment_method: expected=wait, actual=not_recommended
+    XX payment_plan: expected=, actual=none
+    OK earliest_date_for_full_payment: expected=, actual=
+    OK spending_changes_needed: expected=none, actual=none
+
+================================================================================
+request_10: expected_safe=12700.0, actual_safe=0.0, diff=-12700.00
+  user=user_10, currency=INR
+  balance=750155.0, min_balance=225400.0
+  requested_amount=266700.0, request_date=2024-12-06
+  desired_completion=2025-02-10
+  min_trajectory_cents=19153215, minimum_cents=22540000
+  available_cents=-3386785, formula_safe=0.0
+  baseline_safe=False
+  min_day=2025-03-06, min_day_balance=191532.15
+  future_events: 50 total, 0 credits, 50 debits
+  CREDITS:
+  DEBITS:
+    2024-12-06 PROJ REC projected transport 5563.39 INR [proj_event_891_20241206] Ride-hailing trip
+    2024-12-07 PROJ REC projected utilities 17771.13 INR [proj_event_834_20241207] Electricity and water bill
+    2024-12-11 PROJ REC projected gym 4860.0 INR [proj_event_837_20241211] Community fitness plan
+    2024-12-12 PROJ REC projected music_subscription 2800.0 INR [proj_event_835_20241212] Music subscription
+    2024-12-12 PROJ REC projected groceries 10087.39 INR [proj_event_866_20241212] Weekly produce market
+    2024-12-13 PROJ REC projected transport 5563.39 INR [proj_event_891_20241213] Ride-hailing trip
+    2024-12-14 PROJ REC projected delivery_membership 1895.0 INR [proj_event_836_20241214] Delivery service plan
+    2024-12-14 PROJ REC projected dining 8538.83 INR [proj_event_904_20241214] Takeaway order
+    2024-12-15 PROJ REC projected entertainment 4883.78 INR [proj_event_838_20241215] Cinema and events
+    2024-12-19 PROJ REC projected groceries 10087.39 INR [proj_event_866_20241219] Weekly produce market
+    2024-12-20 PROJ REC projected transport 5563.39 INR [proj_event_891_20241220] Ride-hailing trip
+    2024-12-26 PROJ REC projected groceries 10087.39 INR [proj_event_866_20241226] Weekly produce market
+    2024-12-27 PROJ REC projected transport 5563.39 INR [proj_event_891_20241227] Ride-hailing trip
+    2024-12-28 PROJ REC projected dining 8538.83 INR [proj_event_904_20241228] Takeaway order
+    2025-01-02 PROJ REC projected groceries 10087.39 INR [proj_event_866_20250102] Weekly produce market
+    2025-01-03 PROJ REC projected rent 69100.0 INR [proj_event_840_20250103] Monthly rent
+    2025-01-03 PROJ REC projected transport 5563.39 INR [proj_event_891_20250103] Ride-hailing trip
+    2025-01-07 PROJ REC projected utilities 17771.13 INR [proj_event_834_20250107] Electricity and water bill
+    2025-01-09 PROJ REC projected groceries 10087.39 INR [proj_event_866_20250109] Weekly produce market
+    2025-01-10 PROJ REC projected transport 5563.39 INR [proj_event_891_20250110] Ride-hailing trip
+    2025-01-11 PROJ REC projected gym 4860.0 INR [proj_event_837_20250111] Community fitness plan
+    2025-01-11 PROJ REC projected dining 8538.83 INR [proj_event_904_20250111] Takeaway order
+    2025-01-12 PROJ REC projected music_subscription 2800.0 INR [proj_event_835_20250112] Music subscription
+    2025-01-14 PROJ REC projected delivery_membership 1895.0 INR [proj_event_836_20250114] Delivery service plan
+    2025-01-15 PROJ REC projected entertainment 4883.78 INR [proj_event_838_20250115] Cinema and events
+    2025-01-16 PROJ REC projected groceries 10087.39 INR [proj_event_866_20250116] Weekly produce market
+    2025-01-17 PROJ REC projected transport 5563.39 INR [proj_event_891_20250117] Ride-hailing trip
+    2025-01-23 PROJ REC projected groceries 10087.39 INR [proj_event_866_20250123] Weekly produce market
+    2025-01-24 PROJ REC projected transport 5563.39 INR [proj_event_891_20250124] Ride-hailing trip
+    2025-01-25 PROJ REC projected dining 8538.83 INR [proj_event_904_20250125] Takeaway order
+    2025-01-30 PROJ REC projected groceries 10087.39 INR [proj_event_866_20250130] Weekly produce market
+    2025-01-31 PROJ REC projected transport 5563.39 INR [proj_event_891_20250131] Ride-hailing trip
+    2025-02-03 PROJ REC projected rent 69100.0 INR [proj_event_840_20250203] Monthly rent
+    2025-02-06 PROJ REC projected groceries 10087.39 INR [proj_event_866_20250206] Weekly produce market
+    2025-02-07 PROJ REC projected utilities 17771.13 INR [proj_event_834_20250207] Electricity and water bill
+    2025-02-07 PROJ REC projected transport 5563.39 INR [proj_event_891_20250207] Ride-hailing trip
+    2025-02-08 PROJ REC projected dining 8538.83 INR [proj_event_904_20250208] Takeaway order
+    2025-02-11 PROJ REC projected gym 4860.0 INR [proj_event_837_20250211] Community fitness plan
+    2025-02-12 PROJ REC projected music_subscription 2800.0 INR [proj_event_835_20250212] Music subscription
+    2025-02-13 PROJ REC projected groceries 10087.39 INR [proj_event_866_20250213] Weekly produce market
+    2025-02-14 PROJ REC projected delivery_membership 1895.0 INR [proj_event_836_20250214] Delivery service plan
+    2025-02-14 PROJ REC projected transport 5563.39 INR [proj_event_891_20250214] Ride-hailing trip
+    2025-02-15 PROJ REC projected entertainment 4883.78 INR [proj_event_838_20250215] Cinema and events
+    2025-02-20 PROJ REC projected groceries 10087.39 INR [proj_event_866_20250220] Weekly produce market
+    2025-02-21 PROJ REC projected transport 5563.39 INR [proj_event_891_20250221] Ride-hailing trip
+    2025-02-22 PROJ REC projected dining 8538.83 INR [proj_event_904_20250222] Takeaway order
+    2025-02-27 PROJ REC projected groceries 10087.39 INR [proj_event_866_20250227] Weekly produce market
+    2025-02-28 PROJ REC projected transport 5563.39 INR [proj_event_891_20250228] Ride-hailing trip
+    2025-03-03 PROJ REC projected rent 69100.0 INR [proj_event_840_20250303] Monthly rent
+    2025-03-06 PROJ REC projected groceries 10087.39 INR [proj_event_866_20250306] Weekly produce market
+  TRAJECTORY (first 10 and min area):
+    2024-12-06: 744591.61
+    2024-12-07: 726820.48
+    2024-12-08: 726820.48
+    2024-12-09: 726820.48
+    2024-12-10: 726820.48
+    2024-12-11: 721960.48
+    2024-12-12: 709073.09
+    2024-12-13: 703509.70
+    2024-12-14: 693075.87
+    2024-12-15: 688192.09
+    2025-03-04: 201619.54 
+    2025-03-05: 201619.54 
+    2025-03-06: 191532.15 <-- MIN
+  FIELD COMPARISON:
+    XX amount_safe_to_pay: expected=12700.0, actual=0.0
+    OK affordability_status: expected=not_affordable, actual=not_affordable
+    OK recommended_payment_method: expected=not_recommended, actual=not_recommended
+    XX payment_plan: expected=, actual=none
+    OK earliest_date_for_full_payment: expected=, actual=
+    OK spending_changes_needed: expected=none, actual=none
+
+================================================================================
+request_11: expected_safe=12510645.0, actual_safe=12373047.91, diff=-137597.09
+  user=user_11, currency=IDR
+  balance=63531795.0, min_balance=34140600.0
+  requested_amount=13110000.0, request_date=2025-05-03
+  desired_completion=2025-06-12
+  min_trajectory_cents=4651364791, minimum_cents=3414060000
+  available_cents=1237304791, formula_safe=12373047.91
+  baseline_safe=True
+  min_day=2025-05-14, min_day_balance=46513647.91
+  future_events: 43 total, 3 credits, 40 debits
+  CREDITS:
+    2025-05-15 PROJ REC salary 38760000.0 IDR [proj_sal_IDR_main_20250515] Confirmed or recurring salary
+    2025-06-15 PROJ REC salary 38760000.0 IDR [proj_sal_IDR_main_20250615] Confirmed or recurring salary
+    2025-07-15 PROJ REC salary 38760000.0 IDR [proj_sal_IDR_main_20250715] Confirmed or recurring salary
+  DEBITS:
+    2025-05-05 PROJ REC projected housing 2954500.0 IDR [proj_event_943_20250505] Home association fee
+    2025-05-08 PROJ REC projected utilities 2796165.18 IDR [proj_event_944_20250508] Municipal utilities
+    2025-05-08 PROJ REC projected groceries 1311350.07 IDR [proj_event_967_20250508] Fresh food shop
+    2025-05-09 PROJ REC projected insurance 1881000.0 IDR [proj_event_945_20250509] Vehicle insurance premium
+    2025-05-10 PROJ REC projected education 2544100.0 IDR [proj_event_946_20250510] Child education fee
+    2025-05-11 PROJ REC projected transport 1185524.72 IDR [proj_event_980_20250511] Vehicle charging
+    2025-05-12 PROJ REC projected healthcare 2826901.92 IDR [proj_event_947_20250512] Regular medicine purchase
+    2025-05-14 PROJ REC projected cloud_storage 168150.0 IDR [proj_event_949_20250514] Cloud storage plan
+    2025-05-14 PROJ REC projected dining 1350455.2 IDR [proj_event_989_20250514] Weekend food delivery
+    2025-05-16 PROJ REC projected entertainment 1674887.61 IDR [proj_event_948_20250516] Games and recreation
+    2025-05-18 PROJ REC projected groceries 1311350.07 IDR [proj_event_967_20250518] Fresh food shop
+    2025-05-25 PROJ REC projected transport 1185524.72 IDR [proj_event_980_20250525] Vehicle charging
+    2025-05-28 PROJ REC projected groceries 1311350.07 IDR [proj_event_967_20250528] Fresh food shop
+    2025-06-04 PROJ REC projected dining 1350455.2 IDR [proj_event_989_20250604] Weekend food delivery
+    2025-06-05 PROJ REC projected housing 2954500.0 IDR [proj_event_943_20250605] Home association fee
+    2025-06-07 PROJ REC projected groceries 1311350.07 IDR [proj_event_967_20250607] Fresh food shop
+    2025-06-08 PROJ REC projected utilities 2796165.18 IDR [proj_event_944_20250608] Municipal utilities
+    2025-06-08 PROJ REC projected transport 1185524.72 IDR [proj_event_980_20250608] Vehicle charging
+    2025-06-09 PROJ REC projected insurance 1881000.0 IDR [proj_event_945_20250609] Vehicle insurance premium
+    2025-06-10 PROJ REC projected education 2544100.0 IDR [proj_event_946_20250610] Child education fee
+    2025-06-12 PROJ REC projected healthcare 2826901.92 IDR [proj_event_947_20250612] Regular medicine purchase
+    2025-06-14 PROJ REC projected cloud_storage 168150.0 IDR [proj_event_949_20250614] Cloud storage plan
+    2025-06-16 PROJ REC projected entertainment 1674887.61 IDR [proj_event_948_20250616] Games and recreation
+    2025-06-17 PROJ REC projected groceries 1311350.07 IDR [proj_event_967_20250617] Fresh food shop
+    2025-06-22 PROJ REC projected transport 1185524.72 IDR [proj_event_980_20250622] Vehicle charging
+    2025-06-25 PROJ REC projected dining 1350455.2 IDR [proj_event_989_20250625] Weekend food delivery
+    2025-06-27 PROJ REC projected groceries 1311350.07 IDR [proj_event_967_20250627] Fresh food shop
+    2025-07-05 PROJ REC projected housing 2954500.0 IDR [proj_event_943_20250705] Home association fee
+    2025-07-06 PROJ REC projected transport 1185524.72 IDR [proj_event_980_20250706] Vehicle charging
+    2025-07-07 PROJ REC projected groceries 1311350.07 IDR [proj_event_967_20250707] Fresh food shop
+    2025-07-08 PROJ REC projected utilities 2796165.18 IDR [proj_event_944_20250708] Municipal utilities
+    2025-07-09 PROJ REC projected insurance 1881000.0 IDR [proj_event_945_20250709] Vehicle insurance premium
+    2025-07-10 PROJ REC projected education 2544100.0 IDR [proj_event_946_20250710] Child education fee
+    2025-07-12 PROJ REC projected healthcare 2826901.92 IDR [proj_event_947_20250712] Regular medicine purchase
+    2025-07-14 PROJ REC projected cloud_storage 168150.0 IDR [proj_event_949_20250714] Cloud storage plan
+    2025-07-16 PROJ REC projected entertainment 1674887.61 IDR [proj_event_948_20250716] Games and recreation
+    2025-07-16 PROJ REC projected dining 1350455.2 IDR [proj_event_989_20250716] Weekend food delivery
+    2025-07-17 PROJ REC projected groceries 1311350.07 IDR [proj_event_967_20250717] Fresh food shop
+    2025-07-20 PROJ REC projected transport 1185524.72 IDR [proj_event_980_20250720] Vehicle charging
+    2025-07-27 PROJ REC projected groceries 1311350.07 IDR [proj_event_967_20250727] Fresh food shop
+  TRAJECTORY (first 10 and min area):
+    2025-05-03: 63531795.00
+    2025-05-04: 63531795.00
+    2025-05-05: 60577295.00
+    2025-05-06: 60577295.00
+    2025-05-07: 60577295.00
+    2025-05-08: 56469779.75
+    2025-05-09: 54588779.75
+    2025-05-10: 52044679.75
+    2025-05-11: 50859155.03
+    2025-05-12: 48032253.11
+    2025-05-12: 48032253.11 
+    2025-05-13: 48032253.11 
+    2025-05-14: 46513647.91 <-- MIN
+    2025-05-15: 85273647.91 
+    2025-05-16: 83598760.30 
+  FIELD COMPARISON:
+    XX amount_safe_to_pay: expected=12510645.0, actual=12373047.91
+    XX affordability_status: expected=affordable_with_plan, actual=affordable_later
+    XX recommended_payment_method: expected=full_payment, actual=wait
+    XX payment_plan: expected=, actual=2025-05-15:13110000
+    XX earliest_date_for_full_payment: expected=, actual=2025-05-15
+    XX spending_changes_needed: expected=reduce_to:event_989:665950, actual=none
+
+================================================================================
+request_12: expected_safe=65164.0, actual_safe=62814.46, diff=-2349.54
+  user=user_12, currency=ZAR
+  balance=193089.89, min_balance=43200.0
+  requested_amount=65164.0, request_date=2026-04-05
+  desired_completion=2026-06-20
+  min_trajectory_cents=10601446, minimum_cents=4320000
+  available_cents=6281446, formula_safe=62814.46
+  baseline_safe=True
+  min_day=2026-07-01, min_day_balance=106014.46
+  future_events: 32 total, 0 credits, 32 debits
+  CREDITS:
+  DEBITS:
+    2026-04-05 PROJ REC projected utilities 3606.2 ZAR [proj_event_1014_20260405] Water and power payment
+    2026-04-07 PROJ REC projected groceries 1930.95 ZAR [proj_event_1036_20260407] Fresh food shop
+    2026-04-08 PROJ REC projected streaming 1504.8 ZAR [proj_event_1016_20260408] Family streaming plan
+    2026-04-11 PROJ REC projected cloud_storage 447.7 ZAR [proj_event_1015_20260411] Shared storage plan
+    2026-04-11 PROJ REC projected shopping 1169.42 ZAR [proj_event_1017_20260411] Monthly shopping spend
+    2026-04-17 PROJ REC projected groceries 1930.95 ZAR [proj_event_1036_20260417] Fresh food shop
+    2026-04-17 PROJ REC projected transport 1517.5 ZAR [proj_event_1045_20260417] Parking and tolls
+    2026-04-18 PROJ REC projected dining 2016.63 ZAR [proj_event_1054_20260418] Coffee shop
+    2026-04-27 PROJ REC projected groceries 1930.95 ZAR [proj_event_1036_20260427] Fresh food shop
+    2026-05-01 PROJ REC projected rent 11792.0 ZAR [proj_event_1018_20260501] Monthly rent
+    2026-05-05 PROJ REC projected utilities 3606.2 ZAR [proj_event_1014_20260505] Water and power payment
+    2026-05-07 PROJ REC projected groceries 1930.95 ZAR [proj_event_1036_20260507] Fresh food shop
+    2026-05-08 PROJ REC projected streaming 1504.8 ZAR [proj_event_1016_20260508] Family streaming plan
+    2026-05-08 PROJ REC projected transport 1517.5 ZAR [proj_event_1045_20260508] Parking and tolls
+    2026-05-09 PROJ REC projected dining 2016.63 ZAR [proj_event_1054_20260509] Coffee shop
+    2026-05-11 PROJ REC projected cloud_storage 447.7 ZAR [proj_event_1015_20260511] Shared storage plan
+    2026-05-11 PROJ REC projected shopping 1169.42 ZAR [proj_event_1017_20260511] Monthly shopping spend
+    2026-05-17 PROJ REC projected groceries 1930.95 ZAR [proj_event_1036_20260517] Fresh food shop
+    2026-05-27 PROJ REC projected groceries 1930.95 ZAR [proj_event_1036_20260527] Fresh food shop
+    2026-05-29 PROJ REC projected transport 1517.5 ZAR [proj_event_1045_20260529] Parking and tolls
+    2026-05-30 PROJ REC projected dining 2016.63 ZAR [proj_event_1054_20260530] Coffee shop
+    2026-06-01 PROJ REC projected rent 11792.0 ZAR [proj_event_1018_20260601] Monthly rent
+    2026-06-05 PROJ REC projected utilities 3606.2 ZAR [proj_event_1014_20260605] Water and power payment
+    2026-06-06 PROJ REC projected groceries 1930.95 ZAR [proj_event_1036_20260606] Fresh food shop
+    2026-06-08 PROJ REC projected streaming 1504.8 ZAR [proj_event_1016_20260608] Family streaming plan
+    2026-06-11 PROJ REC projected cloud_storage 447.7 ZAR [proj_event_1015_20260611] Shared storage plan
+    2026-06-11 PROJ REC projected shopping 1169.42 ZAR [proj_event_1017_20260611] Monthly shopping spend
+    2026-06-16 PROJ REC projected groceries 1930.95 ZAR [proj_event_1036_20260616] Fresh food shop
+    2026-06-19 PROJ REC projected transport 1517.5 ZAR [proj_event_1045_20260619] Parking and tolls
+    2026-06-20 PROJ REC projected dining 2016.63 ZAR [proj_event_1054_20260620] Coffee shop
+    2026-06-26 PROJ REC projected groceries 1930.95 ZAR [proj_event_1036_20260626] Fresh food shop
+    2026-07-01 PROJ REC projected rent 11792.0 ZAR [proj_event_1018_20260701] Monthly rent
+  TRAJECTORY (first 10 and min area):
+    2026-04-05: 189483.69
+    2026-04-06: 189483.69
+    2026-04-07: 187552.74
+    2026-04-08: 186047.94
+    2026-04-09: 186047.94
+    2026-04-10: 186047.94
+    2026-04-11: 184430.82
+    2026-04-12: 184430.82
+    2026-04-13: 184430.82
+    2026-04-14: 184430.82
+    2026-06-29: 117806.46 
+    2026-06-30: 117806.46 
+    2026-07-01: 106014.46 <-- MIN
+    2026-07-02: 106014.46 
+    2026-07-03: 106014.46 
+  FIELD COMPARISON:
+    XX amount_safe_to_pay: expected=65164.0, actual=62814.46
+    OK affordability_status: expected=affordable_with_plan, actual=affordable_with_plan
+    OK recommended_payment_method: expected=installments, actual=installments
+    XX payment_plan: expected=, actual=2026-04-19:22590.19|2026-05-20:22590.19|2026-06-20:22590.19
+    OK earliest_date_for_full_payment: expected=, actual=
+    XX spending_changes_needed: expected=none, actual=reduce_to:event_1054:1072.50|stop:event_1016
+
+================================================================================
+request_13: expected_safe=433.4, actual_safe=577.51, diff=144.11
+  user=user_13, currency=EUR
+  balance=2789.52, min_balance=1300.0
+  requested_amount=941.6, request_date=2024-03-07
+  desired_completion=2024-05-15
+  min_trajectory_cents=187751, minimum_cents=130000
+  available_cents=57751, formula_safe=577.51
+  baseline_safe=True
+  min_day=2024-05-14, min_day_balance=1877.51
+  future_events: 52 total, 3 credits, 49 debits
+  CREDITS:
+    2024-03-15 EXPL REC salary 1343.54 EUR [event_1161] Confirmed or recurring salary
+    2024-04-15 PROJ REC salary 1343.54 EUR [proj_sal_EUR_main_20240415] Confirmed or recurring salary
+    2024-05-15 PROJ REC salary 1343.54 EUR [proj_sal_EUR_main_20240515] Confirmed or recurring salary
+  DEBITS:
+    2024-03-10 PROJ REC projected gym 61.0 EUR [proj_event_1092_20240310] Community fitness plan
+    2024-03-11 PROJ REC projected music_subscription 29.0 EUR [proj_event_1090_20240311] Music subscription
+    2024-03-12 PROJ REC projected groceries 93.66 EUR [proj_event_1121_20240312] Bulk pantry shop
+    2024-03-13 PROJ REC projected delivery_membership 21.0 EUR [proj_event_1091_20240313] Delivery service plan
+    2024-03-13 PROJ REC projected transport 46.73 EUR [proj_event_1147_20240313] Vehicle charging
+    2024-03-14 PROJ REC projected entertainment 30.39 EUR [proj_event_1093_20240314] Local event tickets
+    2024-03-14 PROJ REC projected dining 60.81 EUR [proj_event_1160_20240314] Weekend food delivery
+    2024-03-19 PROJ REC projected groceries 93.66 EUR [proj_event_1121_20240319] Bulk pantry shop
+    2024-03-20 PROJ REC projected transport 46.73 EUR [proj_event_1147_20240320] Vehicle charging
+    2024-03-26 PROJ REC projected groceries 93.66 EUR [proj_event_1121_20240326] Bulk pantry shop
+    2024-03-27 PROJ REC projected transport 46.73 EUR [proj_event_1147_20240327] Vehicle charging
+    2024-03-28 PROJ REC projected dining 60.81 EUR [proj_event_1160_20240328] Weekend food delivery
+    2024-04-02 PROJ REC projected rent 622.6 EUR [proj_event_1094_20240402] Shared housing rent
+    2024-04-02 PROJ REC projected groceries 93.66 EUR [proj_event_1121_20240402] Bulk pantry shop
+    2024-04-03 PROJ REC projected transport 46.73 EUR [proj_event_1147_20240403] Vehicle charging
+    2024-04-06 PROJ REC projected utilities 134.25 EUR [proj_event_1095_20240406] Water and power payment
+    2024-04-09 PROJ REC projected groceries 93.66 EUR [proj_event_1121_20240409] Bulk pantry shop
+    2024-04-10 PROJ REC projected gym 61.0 EUR [proj_event_1092_20240410] Community fitness plan
+    2024-04-10 PROJ REC projected transport 46.73 EUR [proj_event_1147_20240410] Vehicle charging
+    2024-04-11 PROJ REC projected music_subscription 29.0 EUR [proj_event_1090_20240411] Music subscription
+    2024-04-11 PROJ REC projected dining 60.81 EUR [proj_event_1160_20240411] Weekend food delivery
+    2024-04-13 PROJ REC projected delivery_membership 21.0 EUR [proj_event_1091_20240413] Delivery service plan
+    2024-04-14 PROJ REC projected entertainment 30.39 EUR [proj_event_1093_20240414] Local event tickets
+    2024-04-16 PROJ REC projected groceries 93.66 EUR [proj_event_1121_20240416] Bulk pantry shop
+    2024-04-17 PROJ REC projected transport 46.73 EUR [proj_event_1147_20240417] Vehicle charging
+    2024-04-23 PROJ REC projected groceries 93.66 EUR [proj_event_1121_20240423] Bulk pantry shop
+    2024-04-24 PROJ REC projected transport 46.73 EUR [proj_event_1147_20240424] Vehicle charging
+    2024-04-25 PROJ REC projected dining 60.81 EUR [proj_event_1160_20240425] Weekend food delivery
+    2024-04-30 PROJ REC projected groceries 93.66 EUR [proj_event_1121_20240430] Bulk pantry shop
+    2024-05-01 PROJ REC projected transport 46.73 EUR [proj_event_1147_20240501] Vehicle charging
+    2024-05-02 PROJ REC projected rent 622.6 EUR [proj_event_1094_20240502] Shared housing rent
+    2024-05-06 PROJ REC projected utilities 134.25 EUR [proj_event_1095_20240506] Water and power payment
+    2024-05-07 PROJ REC projected groceries 93.66 EUR [proj_event_1121_20240507] Bulk pantry shop
+    2024-05-08 PROJ REC projected transport 46.73 EUR [proj_event_1147_20240508] Vehicle charging
+    2024-05-09 PROJ REC projected dining 60.81 EUR [proj_event_1160_20240509] Weekend food delivery
+    2024-05-10 PROJ REC projected gym 61.0 EUR [proj_event_1092_20240510] Community fitness plan
+    2024-05-11 PROJ REC projected music_subscription 29.0 EUR [proj_event_1090_20240511] Music subscription
+    2024-05-13 PROJ REC projected delivery_membership 21.0 EUR [proj_event_1091_20240513] Delivery service plan
+    2024-05-14 PROJ REC projected entertainment 30.39 EUR [proj_event_1093_20240514] Local event tickets
+    2024-05-14 PROJ REC projected groceries 93.66 EUR [proj_event_1121_20240514] Bulk pantry shop
+    2024-05-15 PROJ REC projected transport 46.73 EUR [proj_event_1147_20240515] Vehicle charging
+    2024-05-21 PROJ REC projected groceries 93.66 EUR [proj_event_1121_20240521] Bulk pantry shop
+    2024-05-22 PROJ REC projected transport 46.73 EUR [proj_event_1147_20240522] Vehicle charging
+    2024-05-23 PROJ REC projected dining 60.81 EUR [proj_event_1160_20240523] Weekend food delivery
+    2024-05-28 PROJ REC projected groceries 93.66 EUR [proj_event_1121_20240528] Bulk pantry shop
+    2024-05-29 PROJ REC projected transport 46.73 EUR [proj_event_1147_20240529] Vehicle charging
+    2024-06-02 PROJ REC projected rent 622.6 EUR [proj_event_1094_20240602] Shared housing rent
+    2024-06-04 PROJ REC projected groceries 93.66 EUR [proj_event_1121_20240604] Bulk pantry shop
+    2024-06-05 PROJ REC projected transport 46.73 EUR [proj_event_1147_20240605] Vehicle charging
+  TRAJECTORY (first 10 and min area):
+    2024-03-07: 2789.52
+    2024-03-08: 2789.52
+    2024-03-09: 2789.52
+    2024-03-10: 2728.52
+    2024-03-11: 2699.52
+    2024-03-12: 2605.86
+    2024-03-13: 2538.13
+    2024-03-14: 2446.93
+    2024-03-15: 3790.47
+    2024-03-16: 3790.47
+    2024-05-12: 2022.56 
+    2024-05-13: 2001.56 
+    2024-05-14: 1877.51 <-- MIN
+    2024-05-15: 3174.32 
+    2024-05-16: 3174.32 
+  FIELD COMPARISON:
+    XX amount_safe_to_pay: expected=433.4, actual=577.51
+    XX affordability_status: expected=affordable_later, actual=not_affordable
+    XX recommended_payment_method: expected=wait, actual=not_recommended
+    XX payment_plan: expected=, actual=none
+    OK earliest_date_for_full_payment: expected=, actual=
+    OK spending_changes_needed: expected=none, actual=none
+
+================================================================================
+request_14: expected_safe=597.74, actual_safe=607.3, diff=9.56
+  user=user_14, currency=EUR
+  balance=3931.74, min_balance=2200.0
+  requested_amount=5414.2, request_date=2025-08-04
+  desired_completion=2025-10-04
+  min_trajectory_cents=280730, minimum_cents=220000
+  available_cents=60730, formula_safe=607.3
+  baseline_safe=True
+  min_day=2025-08-14, min_day_balance=2807.3
+  future_events: 42 total, 3 credits, 39 debits
+  CREDITS:
+    2025-08-15 PROJ REC salary 2717.0 EUR [proj_sal_EUR_main_20250815] Confirmed or recurring salary
+    2025-09-15 PROJ REC salary 2717.0 EUR [proj_sal_EUR_main_20250915] Confirmed or recurring salary
+    2025-10-15 PROJ REC salary 2717.0 EUR [proj_sal_EUR_main_20251015] Confirmed or recurring salary
+  DEBITS:
+    2025-08-07 PROJ REC projected utilities 153.69 EUR [proj_event_1194_20250807] Energy provider bill
+    2025-08-10 PROJ REC projected groceries 101.15 EUR [proj_event_1226_20250810] Bulk pantry shop
+    2025-08-11 PROJ REC projected healthcare 87.84 EUR [proj_event_1196_20250811] Family healthcare expense
+    2025-08-11 PROJ REC projected transport 51.37 EUR [proj_event_1239_20250811] Ride-hailing trip
+    2025-08-12 PROJ REC projected debt_repayment 350.0 EUR [proj_event_1195_20250812] Credit card repayment
+    2025-08-13 PROJ REC projected cloud_storage 14.0 EUR [proj_event_1198_20250813] Cloud storage plan
+    2025-08-13 PROJ REC projected shopping 140.39 EUR [proj_event_1199_20250813] Online retail purchases
+    2025-08-14 PROJ REC projected family_support 226.0 EUR [proj_event_1197_20250814] Family support payment
+    2025-08-17 PROJ REC projected groceries 101.15 EUR [proj_event_1226_20250817] Bulk pantry shop
+    2025-08-24 PROJ REC projected groceries 101.15 EUR [proj_event_1226_20250824] Bulk pantry shop
+    2025-08-25 PROJ REC projected transport 51.37 EUR [proj_event_1239_20250825] Ride-hailing trip
+    2025-08-31 PROJ REC projected groceries 101.15 EUR [proj_event_1226_20250831] Bulk pantry shop
+    2025-09-03 PROJ REC projected rent 688.6 EUR [proj_event_1200_20250903] Monthly rent
+    2025-09-07 PROJ REC projected utilities 153.69 EUR [proj_event_1194_20250907] Energy provider bill
+    2025-09-07 PROJ REC projected groceries 101.15 EUR [proj_event_1226_20250907] Bulk pantry shop
+    2025-09-08 PROJ REC projected transport 51.37 EUR [proj_event_1239_20250908] Ride-hailing trip
+    2025-09-11 PROJ REC projected healthcare 87.84 EUR [proj_event_1196_20250911] Family healthcare expense
+    2025-09-12 PROJ REC projected debt_repayment 350.0 EUR [proj_event_1195_20250912] Credit card repayment
+    2025-09-13 PROJ REC projected cloud_storage 14.0 EUR [proj_event_1198_20250913] Cloud storage plan
+    2025-09-13 PROJ REC projected shopping 140.39 EUR [proj_event_1199_20250913] Online retail purchases
+    2025-09-14 PROJ REC projected family_support 226.0 EUR [proj_event_1197_20250914] Family support payment
+    2025-09-14 PROJ REC projected groceries 101.15 EUR [proj_event_1226_20250914] Bulk pantry shop
+    2025-09-21 PROJ REC projected groceries 101.15 EUR [proj_event_1226_20250921] Bulk pantry shop
+    2025-09-22 PROJ REC projected transport 51.37 EUR [proj_event_1239_20250922] Ride-hailing trip
+    2025-09-28 PROJ REC projected groceries 101.15 EUR [proj_event_1226_20250928] Bulk pantry shop
+    2025-10-03 PROJ REC projected rent 688.6 EUR [proj_event_1200_20251003] Monthly rent
+    2025-10-05 PROJ REC projected groceries 101.15 EUR [proj_event_1226_20251005] Bulk pantry shop
+    2025-10-06 PROJ REC projected transport 51.37 EUR [proj_event_1239_20251006] Ride-hailing trip
+    2025-10-07 PROJ REC projected utilities 153.69 EUR [proj_event_1194_20251007] Energy provider bill
+    2025-10-11 PROJ REC projected healthcare 87.84 EUR [proj_event_1196_20251011] Family healthcare expense
+    2025-10-12 PROJ REC projected debt_repayment 350.0 EUR [proj_event_1195_20251012] Credit card repayment
+    2025-10-12 PROJ REC projected groceries 101.15 EUR [proj_event_1226_20251012] Bulk pantry shop
+    2025-10-13 PROJ REC projected cloud_storage 14.0 EUR [proj_event_1198_20251013] Cloud storage plan
+    2025-10-13 PROJ REC projected shopping 140.39 EUR [proj_event_1199_20251013] Online retail purchases
+    2025-10-14 PROJ REC projected family_support 226.0 EUR [proj_event_1197_20251014] Family support payment
+    2025-10-19 PROJ REC projected groceries 101.15 EUR [proj_event_1226_20251019] Bulk pantry shop
+    2025-10-20 PROJ REC projected transport 51.37 EUR [proj_event_1239_20251020] Ride-hailing trip
+    2025-10-26 PROJ REC projected groceries 101.15 EUR [proj_event_1226_20251026] Bulk pantry shop
+    2025-11-02 PROJ REC projected groceries 101.15 EUR [proj_event_1226_20251102] Bulk pantry shop
+  TRAJECTORY (first 10 and min area):
+    2025-08-04: 3931.74
+    2025-08-05: 3931.74
+    2025-08-06: 3931.74
+    2025-08-07: 3778.05
+    2025-08-08: 3778.05
+    2025-08-09: 3778.05
+    2025-08-10: 3676.90
+    2025-08-11: 3537.69
+    2025-08-12: 3187.69
+    2025-08-13: 3033.30
+    2025-08-12: 3187.69 
+    2025-08-13: 3033.30 
+    2025-08-14: 2807.30 <-- MIN
+    2025-08-15: 5524.30 
+    2025-08-16: 5524.30 
+  FIELD COMPARISON:
+    XX amount_safe_to_pay: expected=597.74, actual=607.3
+    OK affordability_status: expected=not_affordable, actual=not_affordable
+    OK recommended_payment_method: expected=not_recommended, actual=not_recommended
+    XX payment_plan: expected=, actual=none
+    OK earliest_date_for_full_payment: expected=, actual=
+    OK spending_changes_needed: expected=none, actual=none
+
+================================================================================
+request_15: expected_safe=83.05, actual_safe=12.25, diff=-70.80
+  user=user_15, currency=EUR
+  balance=1770.05, min_balance=1200.0
+  requested_amount=3685.0, request_date=2026-01-06
+  desired_completion=2026-02-01
+  min_trajectory_cents=121225, minimum_cents=120000
+  available_cents=1225, formula_safe=12.25
+  baseline_safe=True
+  min_day=2026-01-14, min_day_balance=1212.25
+  future_events: 54 total, 3 credits, 51 debits
+  CREDITS:
+    2026-01-15 PROJ REC salary 1661.0 EUR [proj_sal_EUR_main_20260115] Confirmed or recurring salary
+    2026-02-15 PROJ REC salary 1661.0 EUR [proj_sal_EUR_main_20260215] Confirmed or recurring salary
+    2026-03-15 PROJ REC salary 1661.0 EUR [proj_sal_EUR_main_20260315] Confirmed or recurring salary
+  DEBITS:
+    2026-01-06 PROJ REC projected groceries 59.45 EUR [proj_event_1297_20260106] Local market purchase
+    2026-01-07 PROJ REC projected transport 31.09 EUR [proj_event_1322_20260107] Ride-hailing trip
+    2026-01-08 PROJ REC projected utilities 84.41 EUR [proj_event_1267_20260108] Energy provider bill
+    2026-01-10 PROJ REC projected education 159.0 EUR [proj_event_1268_20260110] School fee payment
+    2026-01-10 PROJ REC projected dining 38.31 EUR [proj_event_1335_20260110] Bakery and snacks
+    2026-01-13 PROJ REC projected debt_repayment 84.0 EUR [proj_event_1269_20260113] Credit card repayment
+    2026-01-13 PROJ REC projected music_subscription 11.0 EUR [proj_event_1270_20260113] Music subscription
+    2026-01-13 PROJ REC projected groceries 59.45 EUR [proj_event_1297_20260113] Local market purchase
+    2026-01-14 PROJ REC projected transport 31.09 EUR [proj_event_1322_20260114] Ride-hailing trip
+    2026-01-15 PROJ REC projected delivery_membership 27.0 EUR [proj_event_1271_20260115] Food delivery membership
+    2026-01-20 PROJ REC projected groceries 59.45 EUR [proj_event_1297_20260120] Local market purchase
+    2026-01-21 PROJ REC projected transport 31.09 EUR [proj_event_1322_20260121] Ride-hailing trip
+    2026-01-24 PROJ REC projected dining 38.31 EUR [proj_event_1335_20260124] Bakery and snacks
+    2026-01-27 PROJ REC projected groceries 59.45 EUR [proj_event_1297_20260127] Local market purchase
+    2026-01-28 PROJ REC projected transport 31.09 EUR [proj_event_1322_20260128] Ride-hailing trip
+    2026-02-03 PROJ REC projected groceries 59.45 EUR [proj_event_1297_20260203] Local market purchase
+    2026-02-04 PROJ REC projected rent 435.6 EUR [proj_event_1272_20260204] Landlord standing order
+    2026-02-04 PROJ REC projected transport 31.09 EUR [proj_event_1322_20260204] Ride-hailing trip
+    2026-02-07 PROJ REC projected dining 38.31 EUR [proj_event_1335_20260207] Bakery and snacks
+    2026-02-08 PROJ REC projected utilities 84.41 EUR [proj_event_1267_20260208] Energy provider bill
+    2026-02-10 PROJ REC projected education 159.0 EUR [proj_event_1268_20260210] School fee payment
+    2026-02-10 PROJ REC projected groceries 59.45 EUR [proj_event_1297_20260210] Local market purchase
+    2026-02-11 PROJ REC projected transport 31.09 EUR [proj_event_1322_20260211] Ride-hailing trip
+    2026-02-13 PROJ REC projected debt_repayment 84.0 EUR [proj_event_1269_20260213] Credit card repayment
+    2026-02-13 PROJ REC projected music_subscription 11.0 EUR [proj_event_1270_20260213] Music subscription
+    2026-02-15 PROJ REC projected delivery_membership 27.0 EUR [proj_event_1271_20260215] Food delivery membership
+    2026-02-17 PROJ REC projected groceries 59.45 EUR [proj_event_1297_20260217] Local market purchase
+    2026-02-18 PROJ REC projected transport 31.09 EUR [proj_event_1322_20260218] Ride-hailing trip
+    2026-02-21 PROJ REC projected dining 38.31 EUR [proj_event_1335_20260221] Bakery and snacks
+    2026-02-24 PROJ REC projected groceries 59.45 EUR [proj_event_1297_20260224] Local market purchase
+    2026-02-25 PROJ REC projected transport 31.09 EUR [proj_event_1322_20260225] Ride-hailing trip
+    2026-03-03 PROJ REC projected groceries 59.45 EUR [proj_event_1297_20260303] Local market purchase
+    2026-03-04 PROJ REC projected rent 435.6 EUR [proj_event_1272_20260304] Landlord standing order
+    2026-03-04 PROJ REC projected transport 31.09 EUR [proj_event_1322_20260304] Ride-hailing trip
+    2026-03-07 PROJ REC projected dining 38.31 EUR [proj_event_1335_20260307] Bakery and snacks
+    2026-03-08 PROJ REC projected utilities 84.41 EUR [proj_event_1267_20260308] Energy provider bill
+    2026-03-10 PROJ REC projected education 159.0 EUR [proj_event_1268_20260310] School fee payment
+    2026-03-10 PROJ REC projected groceries 59.45 EUR [proj_event_1297_20260310] Local market purchase
+    2026-03-11 PROJ REC projected transport 31.09 EUR [proj_event_1322_20260311] Ride-hailing trip
+    2026-03-13 PROJ REC projected debt_repayment 84.0 EUR [proj_event_1269_20260313] Credit card repayment
+    2026-03-13 PROJ REC projected music_subscription 11.0 EUR [proj_event_1270_20260313] Music subscription
+    2026-03-15 PROJ REC projected delivery_membership 27.0 EUR [proj_event_1271_20260315] Food delivery membership
+    2026-03-17 PROJ REC projected groceries 59.45 EUR [proj_event_1297_20260317] Local market purchase
+    2026-03-18 PROJ REC projected transport 31.09 EUR [proj_event_1322_20260318] Ride-hailing trip
+    2026-03-21 PROJ REC projected dining 38.31 EUR [proj_event_1335_20260321] Bakery and snacks
+    2026-03-24 PROJ REC projected groceries 59.45 EUR [proj_event_1297_20260324] Local market purchase
+    2026-03-25 PROJ REC projected transport 31.09 EUR [proj_event_1322_20260325] Ride-hailing trip
+    2026-03-31 PROJ REC projected groceries 59.45 EUR [proj_event_1297_20260331] Local market purchase
+    2026-04-01 PROJ REC projected transport 31.09 EUR [proj_event_1322_20260401] Ride-hailing trip
+    2026-04-04 PROJ REC projected rent 435.6 EUR [proj_event_1272_20260404] Landlord standing order
+    2026-04-04 PROJ REC projected dining 38.31 EUR [proj_event_1335_20260404] Bakery and snacks
+  TRAJECTORY (first 10 and min area):
+    2026-01-06: 1710.60
+    2026-01-07: 1679.51
+    2026-01-08: 1595.10
+    2026-01-09: 1595.10
+    2026-01-10: 1397.79
+    2026-01-11: 1397.79
+    2026-01-12: 1397.79
+    2026-01-13: 1243.34
+    2026-01-14: 1212.25
+    2026-01-15: 2846.25
+  FIELD COMPARISON:
+    XX amount_safe_to_pay: expected=83.05, actual=12.25
+    OK affordability_status: expected=not_affordable, actual=not_affordable
+    OK recommended_payment_method: expected=not_recommended, actual=not_recommended
+    XX payment_plan: expected=, actual=none
+    OK earliest_date_for_full_payment: expected=, actual=
+    OK spending_changes_needed: expected=none, actual=none
+
+================================================================================
+request_17: expected_safe=243849.58, actual_safe=241663.69, diff=-2185.89
+  user=user_17, currency=INR
+  balance=550379.58, min_balance=166100.0
+  requested_amount=274600.0, request_date=2026-03-01
+  desired_completion=2026-05-04
+  min_trajectory_cents=40776369, minimum_cents=16610000
+  available_cents=24166369, formula_safe=241663.69
+  baseline_safe=True
+  min_day=2026-03-14, min_day_balance=407763.69
+  future_events: 53 total, 3 credits, 50 debits
+  CREDITS:
+    2026-03-15 EXPL REC salary 206000.0 INR [event_1546] Confirmed or recurring salary
+    2026-04-15 PROJ REC salary 206000.0 INR [proj_sal_INR_main_20260415] Confirmed or recurring salary
+    2026-05-15 PROJ REC salary 206000.0 INR [proj_sal_INR_main_20260515] Confirmed or recurring salary
+  DEBITS:
+    2026-03-02 PROJ REC projected rent 49600.0 INR [proj_event_1472_20260302] Apartment rent transfer
+    2026-03-06 PROJ REC projected utilities 8487.15 INR [proj_event_1473_20260306] Municipal utilities
+    2026-03-06 PROJ REC projected groceries 9634.51 INR [proj_event_1545_20260306] Bulk groceries and pantry purchase
+    2026-03-07 PROJ REC projected transport 5650.43 INR [proj_event_1529_20260307] Rail pass
+    2026-03-08 PROJ REC projected education 13660.0 INR [proj_event_1474_20260308] Course tuition
+    2026-03-08 PROJ REC projected dining 6368.86 INR [proj_event_1542_20260308] Family dinner
+    2026-03-11 PROJ REC projected debt_repayment 30200.0 INR [proj_event_1475_20260311] Credit card repayment
+    2026-03-11 PROJ REC projected music_subscription 2055.0 INR [proj_event_1476_20260311] Music subscription
+    2026-03-13 PROJ REC projected delivery_membership 1675.0 INR [proj_event_1477_20260313] Food delivery membership
+    2026-03-13 PROJ REC projected groceries 9634.51 INR [proj_event_1545_20260313] Bulk groceries and pantry purchase
+    2026-03-14 PROJ REC projected transport 5650.43 INR [proj_event_1529_20260314] Rail pass
+    2026-03-20 PROJ REC projected groceries 9634.51 INR [proj_event_1545_20260320] Bulk groceries and pantry purchase
+    2026-03-21 PROJ REC projected transport 5650.43 INR [proj_event_1529_20260321] Rail pass
+    2026-03-22 PROJ REC projected dining 6368.86 INR [proj_event_1542_20260322] Family dinner
+    2026-03-27 PROJ REC projected groceries 9634.51 INR [proj_event_1545_20260327] Bulk groceries and pantry purchase
+    2026-03-28 PROJ REC projected transport 5650.43 INR [proj_event_1529_20260328] Rail pass
+    2026-04-02 PROJ REC projected rent 49600.0 INR [proj_event_1472_20260402] Apartment rent transfer
+    2026-04-03 PROJ REC projected groceries 9634.51 INR [proj_event_1545_20260403] Bulk groceries and pantry purchase
+    2026-04-04 PROJ REC projected transport 5650.43 INR [proj_event_1529_20260404] Rail pass
+    2026-04-05 PROJ REC projected dining 6368.86 INR [proj_event_1542_20260405] Family dinner
+    2026-04-06 PROJ REC projected utilities 8487.15 INR [proj_event_1473_20260406] Municipal utilities
+    2026-04-08 PROJ REC projected education 13660.0 INR [proj_event_1474_20260408] Course tuition
+    2026-04-10 PROJ REC projected groceries 9634.51 INR [proj_event_1545_20260410] Bulk groceries and pantry purchase
+    2026-04-11 PROJ REC projected debt_repayment 30200.0 INR [proj_event_1475_20260411] Credit card repayment
+    2026-04-11 PROJ REC projected music_subscription 2055.0 INR [proj_event_1476_20260411] Music subscription
+    2026-04-11 PROJ REC projected transport 5650.43 INR [proj_event_1529_20260411] Rail pass
+    2026-04-13 PROJ REC projected delivery_membership 1675.0 INR [proj_event_1477_20260413] Food delivery membership
+    2026-04-17 PROJ REC projected groceries 9634.51 INR [proj_event_1545_20260417] Bulk groceries and pantry purchase
+    2026-04-18 PROJ REC projected transport 5650.43 INR [proj_event_1529_20260418] Rail pass
+    2026-04-19 PROJ REC projected dining 6368.86 INR [proj_event_1542_20260419] Family dinner
+    2026-04-24 PROJ REC projected groceries 9634.51 INR [proj_event_1545_20260424] Bulk groceries and pantry purchase
+    2026-04-25 PROJ REC projected transport 5650.43 INR [proj_event_1529_20260425] Rail pass
+    2026-05-01 PROJ REC projected groceries 9634.51 INR [proj_event_1545_20260501] Bulk groceries and pantry purchase
+    2026-05-02 PROJ REC projected rent 49600.0 INR [proj_event_1472_20260502] Apartment rent transfer
+    2026-05-02 PROJ REC projected transport 5650.43 INR [proj_event_1529_20260502] Rail pass
+    2026-05-03 PROJ REC projected dining 6368.86 INR [proj_event_1542_20260503] Family dinner
+    2026-05-06 PROJ REC projected utilities 8487.15 INR [proj_event_1473_20260506] Municipal utilities
+    2026-05-08 PROJ REC projected education 13660.0 INR [proj_event_1474_20260508] Course tuition
+    2026-05-08 PROJ REC projected groceries 9634.51 INR [proj_event_1545_20260508] Bulk groceries and pantry purchase
+    2026-05-09 PROJ REC projected transport 5650.43 INR [proj_event_1529_20260509] Rail pass
+    2026-05-11 PROJ REC projected debt_repayment 30200.0 INR [proj_event_1475_20260511] Credit card repayment
+    2026-05-11 PROJ REC projected music_subscription 2055.0 INR [proj_event_1476_20260511] Music subscription
+    2026-05-13 PROJ REC projected delivery_membership 1675.0 INR [proj_event_1477_20260513] Food delivery membership
+    2026-05-15 PROJ REC projected groceries 9634.51 INR [proj_event_1545_20260515] Bulk groceries and pantry purchase
+    2026-05-16 PROJ REC projected transport 5650.43 INR [proj_event_1529_20260516] Rail pass
+    2026-05-17 PROJ REC projected dining 6368.86 INR [proj_event_1542_20260517] Family dinner
+    2026-05-22 PROJ REC projected groceries 9634.51 INR [proj_event_1545_20260522] Bulk groceries and pantry purchase
+    2026-05-23 PROJ REC projected transport 5650.43 INR [proj_event_1529_20260523] Rail pass
+    2026-05-29 PROJ REC projected groceries 9634.51 INR [proj_event_1545_20260529] Bulk groceries and pantry purchase
+    2026-05-30 PROJ REC projected transport 5650.43 INR [proj_event_1529_20260530] Rail pass
+  TRAJECTORY (first 10 and min area):
+    2026-03-01: 550379.58
+    2026-03-02: 500779.58
+    2026-03-03: 500779.58
+    2026-03-04: 500779.58
+    2026-03-05: 500779.58
+    2026-03-06: 482657.92
+    2026-03-07: 477007.49
+    2026-03-08: 456978.63
+    2026-03-09: 456978.63
+    2026-03-10: 456978.63
+    2026-03-12: 424723.63 
+    2026-03-13: 413414.12 
+    2026-03-14: 407763.69 <-- MIN
+    2026-03-15: 613763.69 
+    2026-03-16: 613763.69 
+  FIELD COMPARISON:
+    XX amount_safe_to_pay: expected=243849.58, actual=241663.69
+    OK affordability_status: expected=affordable_with_plan, actual=affordable_with_plan
+    OK recommended_payment_method: expected=installments, actual=installments
+    XX payment_plan: expected=, actual=2026-03-01:95194.67|2026-03-31:95194.67|2026-04-30:95194.67
+    XX earliest_date_for_full_payment: expected=, actual=2026-04-15
+    OK spending_changes_needed: expected=none, actual=none
+
+================================================================================
+request_18: expected_safe=462.0, actual_safe=558.87, diff=96.87
+  user=user_18, currency=EUR
+  balance=2486.0, min_balance=1400.0
+  requested_amount=3246.1, request_date=2026-07-07
+  desired_completion=2026-09-15
+  min_trajectory_cents=195887, minimum_cents=140000
+  available_cents=55887, formula_safe=558.87
+  baseline_safe=True
+  min_day=2026-07-14, min_day_balance=1958.87
+  future_events: 39 total, 3 credits, 36 debits
+  CREDITS:
+    2026-07-15 PROJ REC salary 2310.0 EUR [proj_sal_EUR_main_20260715] Confirmed or recurring salary
+    2026-08-15 PROJ REC salary 2310.0 EUR [proj_sal_EUR_main_20260815] Confirmed or recurring salary
+    2026-09-15 PROJ REC salary 2310.0 EUR [proj_sal_EUR_main_20260915] Confirmed or recurring salary
+  DEBITS:
+    2026-07-07 PROJ REC projected utilities 107.43 EUR [proj_event_1573_20260707] Energy provider bill
+    2026-07-08 PROJ REC projected insurance 68.0 EUR [proj_event_1574_20260708] Household insurance
+    2026-07-10 PROJ REC projected streaming 68.0 EUR [proj_event_1576_20260710] Family streaming plan
+    2026-07-11 PROJ REC projected healthcare 147.96 EUR [proj_event_1575_20260711] Clinic payment
+    2026-07-11 PROJ REC projected groceries 90.08 EUR [proj_event_1595_20260711] Supermarket basket
+    2026-07-14 PROJ REC projected transport 45.66 EUR [proj_event_1608_20260714] Metro and bus fares
+    2026-07-15 PROJ REC projected dining 82.67 EUR [proj_event_1621_20260715] Takeaway order
+    2026-07-21 PROJ REC projected groceries 90.08 EUR [proj_event_1595_20260721] Supermarket basket
+    2026-07-28 PROJ REC projected transport 45.66 EUR [proj_event_1608_20260728] Metro and bus fares
+    2026-07-29 PROJ REC projected dining 82.67 EUR [proj_event_1621_20260729] Takeaway order
+    2026-07-31 PROJ REC projected groceries 90.08 EUR [proj_event_1595_20260731] Supermarket basket
+    2026-08-04 PROJ REC projected housing 167.0 EUR [proj_event_1577_20260804] Building maintenance payment
+    2026-08-07 PROJ REC projected utilities 107.43 EUR [proj_event_1573_20260807] Energy provider bill
+    2026-08-08 PROJ REC projected insurance 68.0 EUR [proj_event_1574_20260808] Household insurance
+    2026-08-10 PROJ REC projected streaming 68.0 EUR [proj_event_1576_20260810] Family streaming plan
+    2026-08-10 PROJ REC projected groceries 90.08 EUR [proj_event_1595_20260810] Supermarket basket
+    2026-08-11 PROJ REC projected healthcare 147.96 EUR [proj_event_1575_20260811] Clinic payment
+    2026-08-11 PROJ REC projected transport 45.66 EUR [proj_event_1608_20260811] Metro and bus fares
+    2026-08-12 PROJ REC projected dining 82.67 EUR [proj_event_1621_20260812] Takeaway order
+    2026-08-20 PROJ REC projected groceries 90.08 EUR [proj_event_1595_20260820] Supermarket basket
+    2026-08-25 PROJ REC projected transport 45.66 EUR [proj_event_1608_20260825] Metro and bus fares
+    2026-08-26 PROJ REC projected dining 82.67 EUR [proj_event_1621_20260826] Takeaway order
+    2026-08-30 PROJ REC projected groceries 90.08 EUR [proj_event_1595_20260830] Supermarket basket
+    2026-09-04 PROJ REC projected housing 167.0 EUR [proj_event_1577_20260904] Building maintenance payment
+    2026-09-07 PROJ REC projected utilities 107.43 EUR [proj_event_1573_20260907] Energy provider bill
+    2026-09-08 PROJ REC projected insurance 68.0 EUR [proj_event_1574_20260908] Household insurance
+    2026-09-08 PROJ REC projected transport 45.66 EUR [proj_event_1608_20260908] Metro and bus fares
+    2026-09-09 PROJ REC projected groceries 90.08 EUR [proj_event_1595_20260909] Supermarket basket
+    2026-09-09 PROJ REC projected dining 82.67 EUR [proj_event_1621_20260909] Takeaway order
+    2026-09-10 PROJ REC projected streaming 68.0 EUR [proj_event_1576_20260910] Family streaming plan
+    2026-09-11 PROJ REC projected healthcare 147.96 EUR [proj_event_1575_20260911] Clinic payment
+    2026-09-19 PROJ REC projected groceries 90.08 EUR [proj_event_1595_20260919] Supermarket basket
+    2026-09-22 PROJ REC projected transport 45.66 EUR [proj_event_1608_20260922] Metro and bus fares
+    2026-09-23 PROJ REC projected dining 82.67 EUR [proj_event_1621_20260923] Takeaway order
+    2026-09-29 PROJ REC projected groceries 90.08 EUR [proj_event_1595_20260929] Supermarket basket
+    2026-10-04 PROJ REC projected housing 167.0 EUR [proj_event_1577_20261004] Building maintenance payment
+  TRAJECTORY (first 10 and min area):
+    2026-07-07: 2378.57
+    2026-07-08: 2310.57
+    2026-07-09: 2310.57
+    2026-07-10: 2242.57
+    2026-07-11: 2004.53
+    2026-07-12: 2004.53
+    2026-07-13: 2004.53
+    2026-07-14: 1958.87
+    2026-07-15: 4186.20
+    2026-07-16: 4186.20
+  FIELD COMPARISON:
+    XX amount_safe_to_pay: expected=462.0, actual=558.87
+    OK affordability_status: expected=affordable_later, actual=affordable_later
+    OK recommended_payment_method: expected=wait, actual=wait
+    XX payment_plan: expected=, actual=2026-09-15:3246.10
+    XX earliest_date_for_full_payment: expected=, actual=2026-09-15
+    OK spending_changes_needed: expected=none, actual=none
+
+================================================================================
+request_19: expected_safe=28820.0, actual_safe=30760.72, diff=1940.72
+  user=user_19, currency=INR
+  balance=199545.0, min_balance=92800.0
+  requested_amount=39660.0, request_date=2024-09-04
+  desired_completion=2024-10-04
+  min_trajectory_cents=12356072, minimum_cents=9280000
+  available_cents=3076072, formula_safe=30760.72
+  baseline_safe=True
+  min_day=2024-09-14, min_day_balance=123560.72
+  future_events: 43 total, 3 credits, 40 debits
+  CREDITS:
+    2024-09-15 PROJ REC salary 131000.0 INR [proj_sal_INR_main_20240915] Confirmed or recurring salary
+    2024-10-15 PROJ REC salary 131000.0 INR [proj_sal_INR_main_20241015] Confirmed or recurring salary
+    2024-11-15 PROJ REC salary 131000.0 INR [proj_sal_INR_main_20241115] Confirmed or recurring salary
+  DEBITS:
+    2024-09-04 PROJ REC projected rent 36100.0 INR [proj_event_1655_20240904] Residential rent payment
+    2024-09-08 PROJ REC projected utilities 6129.19 INR [proj_event_1656_20240908] Municipal utilities
+    2024-09-10 PROJ REC projected groceries 4667.68 INR [proj_event_1700_20240910] Delivered grocery order
+    2024-09-12 PROJ REC projected healthcare 8645.36 INR [proj_event_1658_20240912] Clinic payment
+    2024-09-12 PROJ REC projected transport 2765.93 INR [proj_event_1699_20240912] Fuel refill
+    2024-09-13 PROJ REC projected debt_repayment 11850.0 INR [proj_event_1657_20240913] Loan repayment
+    2024-09-14 PROJ REC projected cloud_storage 395.0 INR [proj_event_1660_20240914] Online backup subscription
+    2024-09-14 PROJ REC projected shopping 5431.12 INR [proj_event_1661_20240914] Clothing and household items
+    2024-09-15 PROJ REC projected family_support 12650.0 INR [proj_event_1659_20240915] Childcare contribution
+    2024-09-17 PROJ REC projected groceries 4667.68 INR [proj_event_1700_20240917] Delivered grocery order
+    2024-09-24 PROJ REC projected groceries 4667.68 INR [proj_event_1700_20240924] Delivered grocery order
+    2024-09-26 PROJ REC projected transport 2765.93 INR [proj_event_1699_20240926] Fuel refill
+    2024-10-01 PROJ REC projected groceries 4667.68 INR [proj_event_1700_20241001] Delivered grocery order
+    2024-10-04 PROJ REC projected rent 36100.0 INR [proj_event_1655_20241004] Residential rent payment
+    2024-10-08 PROJ REC projected utilities 6129.19 INR [proj_event_1656_20241008] Municipal utilities
+    2024-10-08 PROJ REC projected groceries 4667.68 INR [proj_event_1700_20241008] Delivered grocery order
+    2024-10-10 PROJ REC projected transport 2765.93 INR [proj_event_1699_20241010] Fuel refill
+    2024-10-12 PROJ REC projected healthcare 8645.36 INR [proj_event_1658_20241012] Clinic payment
+    2024-10-13 PROJ REC projected debt_repayment 11850.0 INR [proj_event_1657_20241013] Loan repayment
+    2024-10-14 PROJ REC projected cloud_storage 395.0 INR [proj_event_1660_20241014] Online backup subscription
+    2024-10-14 PROJ REC projected shopping 5431.12 INR [proj_event_1661_20241014] Clothing and household items
+    2024-10-15 PROJ REC projected family_support 12650.0 INR [proj_event_1659_20241015] Childcare contribution
+    2024-10-15 PROJ REC projected groceries 4667.68 INR [proj_event_1700_20241015] Delivered grocery order
+    2024-10-22 PROJ REC projected groceries 4667.68 INR [proj_event_1700_20241022] Delivered grocery order
+    2024-10-24 PROJ REC projected transport 2765.93 INR [proj_event_1699_20241024] Fuel refill
+    2024-10-29 PROJ REC projected groceries 4667.68 INR [proj_event_1700_20241029] Delivered grocery order
+    2024-11-04 PROJ REC projected rent 36100.0 INR [proj_event_1655_20241104] Residential rent payment
+    2024-11-05 PROJ REC projected groceries 4667.68 INR [proj_event_1700_20241105] Delivered grocery order
+    2024-11-07 PROJ REC projected transport 2765.93 INR [proj_event_1699_20241107] Fuel refill
+    2024-11-08 PROJ REC projected utilities 6129.19 INR [proj_event_1656_20241108] Municipal utilities
+    2024-11-12 PROJ REC projected healthcare 8645.36 INR [proj_event_1658_20241112] Clinic payment
+    2024-11-12 PROJ REC projected groceries 4667.68 INR [proj_event_1700_20241112] Delivered grocery order
+    2024-11-13 PROJ REC projected debt_repayment 11850.0 INR [proj_event_1657_20241113] Loan repayment
+    2024-11-14 PROJ REC projected cloud_storage 395.0 INR [proj_event_1660_20241114] Online backup subscription
+    2024-11-14 PROJ REC projected shopping 5431.12 INR [proj_event_1661_20241114] Clothing and household items
+    2024-11-15 PROJ REC projected family_support 12650.0 INR [proj_event_1659_20241115] Childcare contribution
+    2024-11-19 PROJ REC projected groceries 4667.68 INR [proj_event_1700_20241119] Delivered grocery order
+    2024-11-21 PROJ REC projected transport 2765.93 INR [proj_event_1699_20241121] Fuel refill
+    2024-11-26 PROJ REC projected groceries 4667.68 INR [proj_event_1700_20241126] Delivered grocery order
+    2024-12-03 PROJ REC projected groceries 4667.68 INR [proj_event_1700_20241203] Delivered grocery order
+  TRAJECTORY (first 10 and min area):
+    2024-09-04: 163445.00
+    2024-09-05: 163445.00
+    2024-09-06: 163445.00
+    2024-09-07: 163445.00
+    2024-09-08: 157315.81
+    2024-09-09: 157315.81
+    2024-09-10: 152648.13
+    2024-09-11: 152648.13
+    2024-09-12: 141236.84
+    2024-09-13: 129386.84
+    2024-09-12: 141236.84 
+    2024-09-13: 129386.84 
+    2024-09-14: 123560.72 <-- MIN
+    2024-09-15: 241910.72 
+    2024-09-16: 241910.72 
+  FIELD COMPARISON:
+    XX amount_safe_to_pay: expected=28820.0, actual=30760.72
+    OK affordability_status: expected=affordable_with_plan, actual=affordable_with_plan
+    OK recommended_payment_method: expected=partial_payment, actual=partial_payment
+    XX payment_plan: expected=, actual=2024-09-04:30760.72|2024-09-15:8899.28
+    XX earliest_date_for_full_payment: expected=, actual=2024-09-15
+    OK spending_changes_needed: expected=none, actual=none
+
+================================================================================
+request_20: expected_safe=5400.0, actual_safe=8266.31, diff=2866.31
+  user=user_20, currency=INR
+  balance=102609.05, min_balance=64500.0
+  requested_amount=303700.0, request_date=2026-02-07
+  desired_completion=2026-02-22
+  min_trajectory_cents=7276631, minimum_cents=6450000
+  available_cents=826631, formula_safe=8266.31
+  baseline_safe=True
+  min_day=2026-02-13, min_day_balance=72766.31
+  future_events: 47 total, 3 credits, 44 debits
+  CREDITS:
+    2026-02-15 PROJ REC salary 108000.0 INR [proj_sal_INR_main_20260215] Confirmed or recurring salary
+    2026-03-15 PROJ REC salary 108000.0 INR [proj_sal_INR_main_20260315] Confirmed or recurring salary
+    2026-04-15 PROJ REC salary 108000.0 INR [proj_sal_INR_main_20260415] Confirmed or recurring salary
+  DEBITS:
+    2026-02-07 PROJ REC projected education 8740.0 INR [proj_event_1737_20260207] School fee payment
+    2026-02-08 EXPL  pending shopping 4470.0 INR [event_1787] Pending online order charge
+    2026-02-09 EXPL  pending utilities 822.05 INR [event_1786] Outstanding telecom bill
+    2026-02-09 PROJ REC projected healthcare 6654.33 INR [proj_event_1738_20260209] Family healthcare expense
+    2026-02-09 PROJ REC projected groceries 3702.16 INR [proj_event_1761_20260209] Household groceries
+    2026-02-11 PROJ REC projected cloud_storage 365.0 INR [proj_event_1740_20260211] Shared storage plan
+    2026-02-12 PROJ REC projected transport 2992.05 INR [proj_event_1774_20260212] Metro and bus fares
+    2026-02-13 PROJ REC projected entertainment 2097.15 INR [proj_event_1739_20260213] Cinema and events
+    2026-02-19 PROJ REC projected groceries 3702.16 INR [proj_event_1761_20260219] Household groceries
+    2026-02-20 PROJ REC projected dining 3578.35 INR [proj_event_1783_20260220] Bakery and snacks
+    2026-02-26 PROJ REC projected transport 2992.05 INR [proj_event_1774_20260226] Metro and bus fares
+    2026-03-01 PROJ REC projected groceries 3702.16 INR [proj_event_1761_20260301] Household groceries
+    2026-03-02 PROJ REC projected housing 7950.0 INR [proj_event_1741_20260302] Home association fee
+    2026-03-05 PROJ REC projected utilities 7769.87 INR [proj_event_1742_20260305] Municipal utilities
+    2026-03-06 PROJ REC projected insurance 3290.0 INR [proj_event_1743_20260306] Household insurance
+    2026-03-07 PROJ REC projected education 8740.0 INR [proj_event_1737_20260307] School fee payment
+    2026-03-09 PROJ REC projected healthcare 6654.33 INR [proj_event_1738_20260309] Family healthcare expense
+    2026-03-11 PROJ REC projected cloud_storage 365.0 INR [proj_event_1740_20260311] Shared storage plan
+    2026-03-11 PROJ REC projected groceries 3702.16 INR [proj_event_1761_20260311] Household groceries
+    2026-03-12 PROJ REC projected transport 2992.05 INR [proj_event_1774_20260312] Metro and bus fares
+    2026-03-13 PROJ REC projected entertainment 2097.15 INR [proj_event_1739_20260313] Cinema and events
+    2026-03-13 PROJ REC projected dining 3578.35 INR [proj_event_1783_20260313] Bakery and snacks
+    2026-03-21 PROJ REC projected groceries 3702.16 INR [proj_event_1761_20260321] Household groceries
+    2026-03-26 PROJ REC projected transport 2992.05 INR [proj_event_1774_20260326] Metro and bus fares
+    2026-03-31 PROJ REC projected groceries 3702.16 INR [proj_event_1761_20260331] Household groceries
+    2026-04-02 PROJ REC projected housing 7950.0 INR [proj_event_1741_20260402] Home association fee
+    2026-04-03 PROJ REC projected dining 3578.35 INR [proj_event_1783_20260403] Bakery and snacks
+    2026-04-05 PROJ REC projected utilities 7769.87 INR [proj_event_1742_20260405] Municipal utilities
+    2026-04-06 PROJ REC projected insurance 3290.0 INR [proj_event_1743_20260406] Household insurance
+    2026-04-07 PROJ REC projected education 8740.0 INR [proj_event_1737_20260407] School fee payment
+    2026-04-09 PROJ REC projected healthcare 6654.33 INR [proj_event_1738_20260409] Family healthcare expense
+    2026-04-09 PROJ REC projected transport 2992.05 INR [proj_event_1774_20260409] Metro and bus fares
+    2026-04-10 PROJ REC projected groceries 3702.16 INR [proj_event_1761_20260410] Household groceries
+    2026-04-11 PROJ REC projected cloud_storage 365.0 INR [proj_event_1740_20260411] Shared storage plan
+    2026-04-13 PROJ REC projected entertainment 2097.15 INR [proj_event_1739_20260413] Cinema and events
+    2026-04-20 PROJ REC projected groceries 3702.16 INR [proj_event_1761_20260420] Household groceries
+    2026-04-23 PROJ REC projected transport 2992.05 INR [proj_event_1774_20260423] Metro and bus fares
+    2026-04-24 PROJ REC projected dining 3578.35 INR [proj_event_1783_20260424] Bakery and snacks
+    2026-04-30 PROJ REC projected groceries 3702.16 INR [proj_event_1761_20260430] Household groceries
+    2026-05-02 PROJ REC projected housing 7950.0 INR [proj_event_1741_20260502] Home association fee
+    2026-05-05 PROJ REC projected utilities 7769.87 INR [proj_event_1742_20260505] Municipal utilities
+    2026-05-06 PROJ REC projected insurance 3290.0 INR [proj_event_1743_20260506] Household insurance
+    2026-05-07 PROJ REC projected education 8740.0 INR [proj_event_1737_20260507] School fee payment
+    2026-05-07 PROJ REC projected transport 2992.05 INR [proj_event_1774_20260507] Metro and bus fares
+  TRAJECTORY (first 10 and min area):
+    2026-02-07: 93869.05
+    2026-02-08: 89399.05
+    2026-02-09: 78220.51
+    2026-02-10: 78220.51
+    2026-02-11: 77855.51
+    2026-02-12: 74863.46
+    2026-02-13: 72766.31
+    2026-02-14: 72766.31
+    2026-02-15: 180766.31
+    2026-02-16: 180766.31
+  FIELD COMPARISON:
+    XX amount_safe_to_pay: expected=5400.0, actual=8266.31
+    OK affordability_status: expected=not_affordable, actual=not_affordable
+    OK recommended_payment_method: expected=not_recommended, actual=not_recommended
+    XX payment_plan: expected=, actual=none
+    OK earliest_date_for_full_payment: expected=, actual=
+    OK spending_changes_needed: expected=none, actual=none
+
+================================================================================
+request_21: expected_safe=1543.35, actual_safe=1574.4, diff=31.05
+  user=user_21, currency=USD
+  balance=3911.35, min_balance=1800.0
+  requested_amount=1574.4, request_date=2026-04-03
+  desired_completion=2026-04-14
+  min_trajectory_cents=347214, minimum_cents=180000
+  available_cents=167214, formula_safe=1574.4
+  baseline_safe=True
+  min_day=2026-04-12, min_day_balance=3472.14
+  future_events: 36 total, 3 credits, 33 debits
+  CREDITS:
+    2026-04-15 EXPL REC salary 2256.0 USD [event_1858] Confirmed or recurring salary
+    2026-05-15 PROJ REC salary 2256.0 USD [proj_sal_USD_main_20260515] Confirmed or recurring salary
+    2026-06-15 PROJ REC salary 2256.0 USD [proj_sal_USD_main_20260615] Confirmed or recurring salary
+  DEBITS:
+    2026-04-05 EXPL  pending transport 53.0 USD [event_1857] Pending fuel authorization
+    2026-04-06 PROJ REC projected utilities 124.08 USD [proj_event_1814_20260406] Municipal utilities
+    2026-04-06 PROJ REC projected groceries 77.75 USD [proj_event_1836_20260406] Local market purchase
+    2026-04-09 PROJ REC projected streaming 47.0 USD [proj_event_1816_20260409] Streaming subscription
+    2026-04-12 PROJ REC projected cloud_storage 11.0 USD [proj_event_1815_20260412] Online backup subscription
+    2026-04-12 PROJ REC projected shopping 126.38 USD [proj_event_1817_20260412] Monthly shopping spend
+    2026-04-16 PROJ REC projected groceries 77.75 USD [proj_event_1836_20260416] Local market purchase
+    2026-04-16 PROJ REC projected transport 42.35 USD [proj_event_1845_20260416] Rail pass
+    2026-04-17 PROJ REC projected dining 98.03 USD [proj_event_1854_20260417] Neighbourhood restaurant
+    2026-04-26 PROJ REC projected groceries 77.75 USD [proj_event_1836_20260426] Local market purchase
+    2026-05-02 PROJ REC projected rent 718.8 USD [proj_event_1818_20260502] Residential rent payment
+    2026-05-06 PROJ REC projected utilities 124.08 USD [proj_event_1814_20260506] Municipal utilities
+    2026-05-06 PROJ REC projected groceries 77.75 USD [proj_event_1836_20260506] Local market purchase
+    2026-05-07 PROJ REC projected transport 42.35 USD [proj_event_1845_20260507] Rail pass
+    2026-05-08 PROJ REC projected dining 98.03 USD [proj_event_1854_20260508] Neighbourhood restaurant
+    2026-05-09 PROJ REC projected streaming 47.0 USD [proj_event_1816_20260509] Streaming subscription
+    2026-05-12 PROJ REC projected cloud_storage 11.0 USD [proj_event_1815_20260512] Online backup subscription
+    2026-05-12 PROJ REC projected shopping 126.38 USD [proj_event_1817_20260512] Monthly shopping spend
+    2026-05-16 PROJ REC projected groceries 77.75 USD [proj_event_1836_20260516] Local market purchase
+    2026-05-26 PROJ REC projected groceries 77.75 USD [proj_event_1836_20260526] Local market purchase
+    2026-05-28 PROJ REC projected transport 42.35 USD [proj_event_1845_20260528] Rail pass
+    2026-05-29 PROJ REC projected dining 98.03 USD [proj_event_1854_20260529] Neighbourhood restaurant
+    2026-06-02 PROJ REC projected rent 718.8 USD [proj_event_1818_20260602] Residential rent payment
+    2026-06-05 PROJ REC projected groceries 77.75 USD [proj_event_1836_20260605] Local market purchase
+    2026-06-06 PROJ REC projected utilities 124.08 USD [proj_event_1814_20260606] Municipal utilities
+    2026-06-09 PROJ REC projected streaming 47.0 USD [proj_event_1816_20260609] Streaming subscription
+    2026-06-12 PROJ REC projected cloud_storage 11.0 USD [proj_event_1815_20260612] Online backup subscription
+    2026-06-12 PROJ REC projected shopping 126.38 USD [proj_event_1817_20260612] Monthly shopping spend
+    2026-06-15 PROJ REC projected groceries 77.75 USD [proj_event_1836_20260615] Local market purchase
+    2026-06-18 PROJ REC projected transport 42.35 USD [proj_event_1845_20260618] Rail pass
+    2026-06-19 PROJ REC projected dining 98.03 USD [proj_event_1854_20260619] Neighbourhood restaurant
+    2026-06-25 PROJ REC projected groceries 77.75 USD [proj_event_1836_20260625] Local market purchase
+    2026-07-02 PROJ REC projected rent 718.8 USD [proj_event_1818_20260702] Residential rent payment
+  TRAJECTORY (first 10 and min area):
+    2026-04-03: 3911.35
+    2026-04-04: 3911.35
+    2026-04-05: 3858.35
+    2026-04-06: 3656.52
+    2026-04-07: 3656.52
+    2026-04-08: 3656.52
+    2026-04-09: 3609.52
+    2026-04-10: 3609.52
+    2026-04-11: 3609.52
+    2026-04-12: 3472.14
+  FIELD COMPARISON:
+    XX amount_safe_to_pay: expected=1543.35, actual=1574.4
+    XX affordability_status: expected=affordable_with_plan, actual=affordable_now
+    OK recommended_payment_method: expected=full_payment, actual=full_payment
+    XX payment_plan: expected=, actual=2026-04-03:1574.40
+    XX earliest_date_for_full_payment: expected=, actual=2026-04-03
+    XX spending_changes_needed: expected=stop:event_1815|reduce_to:event_1816:23.50, actual=none
+
+================================================================================
+request_22: expected_safe=475.46, actual_safe=464.05, diff=-11.41
+  user=user_22, currency=EUR
+  balance=1132.46, min_balance=500.0
+  requested_amount=731.5, request_date=2024-12-05
+  desired_completion=2025-02-10
+  min_trajectory_cents=96405, minimum_cents=50000
+  available_cents=46405, formula_safe=464.05
+  baseline_safe=True
+  min_day=2024-12-14, min_day_balance=964.05
+  future_events: 54 total, 3 credits, 51 debits
+  CREDITS:
+    2024-12-15 PROJ REC salary 616.0 EUR [proj_sal_EUR_main_20241215] Confirmed or recurring salary
+    2025-01-15 PROJ REC salary 616.0 EUR [proj_sal_EUR_main_20250115] Confirmed or recurring salary
+    2025-02-15 PROJ REC salary 616.0 EUR [proj_sal_EUR_main_20250215] Confirmed or recurring salary
+  DEBITS:
+    2024-12-05 PROJ REC projected transport 15.05 EUR [proj_event_1945_20241205] Metro and bus fares
+    2024-12-07 PROJ REC projected utilities 27.34 EUR [proj_event_1889_20241207] Electricity and water bill
+    2024-12-08 EXPL  pending shopping 43.0 EUR [event_1961] Pending merchant debit
+    2024-12-11 PROJ REC projected gym 17.0 EUR [proj_event_1892_20241211] Gym membership
+    2024-12-11 PROJ REC projected groceries 23.94 EUR [proj_event_1920_20241211] Fresh food shop
+    2024-12-12 PROJ REC projected music_subscription 6.0 EUR [proj_event_1890_20241212] Music service subscription
+    2024-12-12 PROJ REC projected transport 15.05 EUR [proj_event_1945_20241212] Metro and bus fares
+    2024-12-13 PROJ REC projected dining 16.03 EUR [proj_event_1958_20241213] Takeaway order
+    2024-12-14 PROJ REC projected delivery_membership 5.0 EUR [proj_event_1891_20241214] Food delivery membership
+    2024-12-15 PROJ REC projected entertainment 20.43 EUR [proj_event_1893_20241215] Weekend entertainment
+    2024-12-18 PROJ REC projected groceries 23.94 EUR [proj_event_1920_20241218] Fresh food shop
+    2024-12-19 PROJ REC projected transport 15.05 EUR [proj_event_1945_20241219] Metro and bus fares
+    2024-12-25 PROJ REC projected groceries 23.94 EUR [proj_event_1920_20241225] Fresh food shop
+    2024-12-26 PROJ REC projected transport 15.05 EUR [proj_event_1945_20241226] Metro and bus fares
+    2024-12-27 PROJ REC projected dining 16.03 EUR [proj_event_1958_20241227] Takeaway order
+    2025-01-01 PROJ REC projected groceries 23.94 EUR [proj_event_1920_20250101] Fresh food shop
+    2025-01-02 PROJ REC projected transport 15.05 EUR [proj_event_1945_20250102] Metro and bus fares
+    2025-01-03 PROJ REC projected rent 178.2 EUR [proj_event_1894_20250103] Apartment rent transfer
+    2025-01-07 PROJ REC projected utilities 27.34 EUR [proj_event_1889_20250107] Electricity and water bill
+    2025-01-08 PROJ REC projected groceries 23.94 EUR [proj_event_1920_20250108] Fresh food shop
+    2025-01-09 PROJ REC projected transport 15.05 EUR [proj_event_1945_20250109] Metro and bus fares
+    2025-01-10 PROJ REC projected dining 16.03 EUR [proj_event_1958_20250110] Takeaway order
+    2025-01-11 PROJ REC projected gym 17.0 EUR [proj_event_1892_20250111] Gym membership
+    2025-01-12 PROJ REC projected music_subscription 6.0 EUR [proj_event_1890_20250112] Music service subscription
+    2025-01-14 PROJ REC projected delivery_membership 5.0 EUR [proj_event_1891_20250114] Food delivery membership
+    2025-01-15 PROJ REC projected entertainment 20.43 EUR [proj_event_1893_20250115] Weekend entertainment
+    2025-01-15 PROJ REC projected groceries 23.94 EUR [proj_event_1920_20250115] Fresh food shop
+    2025-01-16 PROJ REC projected transport 15.05 EUR [proj_event_1945_20250116] Metro and bus fares
+    2025-01-22 PROJ REC projected groceries 23.94 EUR [proj_event_1920_20250122] Fresh food shop
+    2025-01-23 PROJ REC projected transport 15.05 EUR [proj_event_1945_20250123] Metro and bus fares
+    2025-01-24 PROJ REC projected dining 16.03 EUR [proj_event_1958_20250124] Takeaway order
+    2025-01-29 PROJ REC projected groceries 23.94 EUR [proj_event_1920_20250129] Fresh food shop
+    2025-01-30 PROJ REC projected transport 15.05 EUR [proj_event_1945_20250130] Metro and bus fares
+    2025-02-03 PROJ REC projected rent 178.2 EUR [proj_event_1894_20250203] Apartment rent transfer
+    2025-02-05 PROJ REC projected groceries 23.94 EUR [proj_event_1920_20250205] Fresh food shop
+    2025-02-06 PROJ REC projected transport 15.05 EUR [proj_event_1945_20250206] Metro and bus fares
+    2025-02-07 PROJ REC projected utilities 27.34 EUR [proj_event_1889_20250207] Electricity and water bill
+    2025-02-07 PROJ REC projected dining 16.03 EUR [proj_event_1958_20250207] Takeaway order
+    2025-02-11 PROJ REC projected gym 17.0 EUR [proj_event_1892_20250211] Gym membership
+    2025-02-12 PROJ REC projected music_subscription 6.0 EUR [proj_event_1890_20250212] Music service subscription
+    2025-02-12 PROJ REC projected groceries 23.94 EUR [proj_event_1920_20250212] Fresh food shop
+    2025-02-13 PROJ REC projected transport 15.05 EUR [proj_event_1945_20250213] Metro and bus fares
+    2025-02-14 PROJ REC projected delivery_membership 5.0 EUR [proj_event_1891_20250214] Food delivery membership
+    2025-02-15 PROJ REC projected entertainment 20.43 EUR [proj_event_1893_20250215] Weekend entertainment
+    2025-02-19 PROJ REC projected groceries 23.94 EUR [proj_event_1920_20250219] Fresh food shop
+    2025-02-20 PROJ REC projected transport 15.05 EUR [proj_event_1945_20250220] Metro and bus fares
+    2025-02-21 PROJ REC projected dining 16.03 EUR [proj_event_1958_20250221] Takeaway order
+    2025-02-26 PROJ REC projected groceries 23.94 EUR [proj_event_1920_20250226] Fresh food shop
+    2025-02-27 PROJ REC projected transport 15.05 EUR [proj_event_1945_20250227] Metro and bus fares
+    2025-03-03 PROJ REC projected rent 178.2 EUR [proj_event_1894_20250303] Apartment rent transfer
+    2025-03-05 PROJ REC projected groceries 23.94 EUR [proj_event_1920_20250305] Fresh food shop
+  TRAJECTORY (first 10 and min area):
+    2024-12-05: 1117.41
+    2024-12-06: 1117.41
+    2024-12-07: 1090.07
+    2024-12-08: 1047.07
+    2024-12-09: 1047.07
+    2024-12-10: 1047.07
+    2024-12-11: 1006.13
+    2024-12-12: 985.08
+    2024-12-13: 969.05
+    2024-12-14: 964.05
+  FIELD COMPARISON:
+    XX amount_safe_to_pay: expected=475.46, actual=464.05
+    OK affordability_status: expected=affordable_with_plan, actual=affordable_with_plan
+    OK recommended_payment_method: expected=installments, actual=installments
+    XX payment_plan: expected=, actual=2024-12-08:253.59|2025-01-05:253.59|2025-02-02:253.59
+    XX earliest_date_for_full_payment: expected=, actual=2025-01-15
+    OK spending_changes_needed: expected=none, actual=none
+
+================================================================================
+request_23: expected_safe=9152.0, actual_safe=8532.21, diff=-619.79
+  user=user_23, currency=ZAR
+  balance=51957.9, min_balance=27000.0
+  requested_amount=38016.0, request_date=2025-05-07
+  desired_completion=2025-07-15
+  min_trajectory_cents=3553221, minimum_cents=2700000
+  available_cents=853221, formula_safe=8532.21
+  baseline_safe=True
+  min_day=2025-05-14, min_day_balance=35532.21
+  future_events: 44 total, 3 credits, 41 debits
+  CREDITS:
+    2025-05-15 PROJ REC salary 45760.0 ZAR [proj_sal_ZAR_main_20250515] Confirmed or recurring salary
+    2025-06-15 PROJ REC salary 45760.0 ZAR [proj_sal_ZAR_main_20250615] Confirmed or recurring salary
+    2025-07-15 PROJ REC salary 45760.0 ZAR [proj_sal_ZAR_main_20250715] Confirmed or recurring salary
+  DEBITS:
+    2025-05-07 PROJ REC projected groceries 1692.61 ZAR [proj_event_2027_20250507] Neighbourhood grocer
+    2025-05-08 PROJ REC projected utilities 2680.15 ZAR [proj_event_1996_20250508] Electricity bill
+    2025-05-11 EXPL  pending healthcare 1553.2 ZAR [event_2042] Pending pharmacy card charge
+    2025-05-12 PROJ REC projected healthcare 1377.89 ZAR [proj_event_1998_20250512] Clinic payment
+    2025-05-13 PROJ REC projected debt_repayment 5852.0 ZAR [proj_event_1997_20250513] Education loan instalment
+    2025-05-14 PROJ REC projected cloud_storage 295.9 ZAR [proj_event_2000_20250514] Cloud storage plan
+    2025-05-14 PROJ REC projected shopping 1281.33 ZAR [proj_event_2001_20250514] Personal shopping
+    2025-05-14 PROJ REC projected groceries 1692.61 ZAR [proj_event_2027_20250514] Neighbourhood grocer
+    2025-05-15 PROJ REC projected family_support 4270.2 ZAR [proj_event_1999_20250515] Childcare contribution
+    2025-05-15 PROJ REC projected transport 956.01 ZAR [proj_event_2040_20250515] Metro and bus fares
+    2025-05-21 PROJ REC projected groceries 1692.61 ZAR [proj_event_2027_20250521] Neighbourhood grocer
+    2025-05-28 PROJ REC projected groceries 1692.61 ZAR [proj_event_2027_20250528] Neighbourhood grocer
+    2025-05-29 PROJ REC projected transport 956.01 ZAR [proj_event_2040_20250529] Metro and bus fares
+    2025-06-04 PROJ REC projected rent 15312.0 ZAR [proj_event_2002_20250604] Shared housing rent
+    2025-06-04 PROJ REC projected groceries 1692.61 ZAR [proj_event_2027_20250604] Neighbourhood grocer
+    2025-06-08 PROJ REC projected utilities 2680.15 ZAR [proj_event_1996_20250608] Electricity bill
+    2025-06-11 PROJ REC projected groceries 1692.61 ZAR [proj_event_2027_20250611] Neighbourhood grocer
+    2025-06-12 PROJ REC projected healthcare 1377.89 ZAR [proj_event_1998_20250612] Clinic payment
+    2025-06-12 PROJ REC projected transport 956.01 ZAR [proj_event_2040_20250612] Metro and bus fares
+    2025-06-13 PROJ REC projected debt_repayment 5852.0 ZAR [proj_event_1997_20250613] Education loan instalment
+    2025-06-14 PROJ REC projected cloud_storage 295.9 ZAR [proj_event_2000_20250614] Cloud storage plan
+    2025-06-14 PROJ REC projected shopping 1281.33 ZAR [proj_event_2001_20250614] Personal shopping
+    2025-06-15 PROJ REC projected family_support 4270.2 ZAR [proj_event_1999_20250615] Childcare contribution
+    2025-06-18 PROJ REC projected groceries 1692.61 ZAR [proj_event_2027_20250618] Neighbourhood grocer
+    2025-06-25 PROJ REC projected groceries 1692.61 ZAR [proj_event_2027_20250625] Neighbourhood grocer
+    2025-06-26 PROJ REC projected transport 956.01 ZAR [proj_event_2040_20250626] Metro and bus fares
+    2025-07-02 PROJ REC projected groceries 1692.61 ZAR [proj_event_2027_20250702] Neighbourhood grocer
+    2025-07-04 PROJ REC projected rent 15312.0 ZAR [proj_event_2002_20250704] Shared housing rent
+    2025-07-08 PROJ REC projected utilities 2680.15 ZAR [proj_event_1996_20250708] Electricity bill
+    2025-07-09 PROJ REC projected groceries 1692.61 ZAR [proj_event_2027_20250709] Neighbourhood grocer
+    2025-07-10 PROJ REC projected transport 956.01 ZAR [proj_event_2040_20250710] Metro and bus fares
+    2025-07-12 PROJ REC projected healthcare 1377.89 ZAR [proj_event_1998_20250712] Clinic payment
+    2025-07-13 PROJ REC projected debt_repayment 5852.0 ZAR [proj_event_1997_20250713] Education loan instalment
+    2025-07-14 PROJ REC projected cloud_storage 295.9 ZAR [proj_event_2000_20250714] Cloud storage plan
+    2025-07-14 PROJ REC projected shopping 1281.33 ZAR [proj_event_2001_20250714] Personal shopping
+    2025-07-15 PROJ REC projected family_support 4270.2 ZAR [proj_event_1999_20250715] Childcare contribution
+    2025-07-16 PROJ REC projected groceries 1692.61 ZAR [proj_event_2027_20250716] Neighbourhood grocer
+    2025-07-23 PROJ REC projected groceries 1692.61 ZAR [proj_event_2027_20250723] Neighbourhood grocer
+    2025-07-24 PROJ REC projected transport 956.01 ZAR [proj_event_2040_20250724] Metro and bus fares
+    2025-07-30 PROJ REC projected groceries 1692.61 ZAR [proj_event_2027_20250730] Neighbourhood grocer
+    2025-08-04 PROJ REC projected rent 15312.0 ZAR [proj_event_2002_20250804] Shared housing rent
+  TRAJECTORY (first 10 and min area):
+    2025-05-07: 50265.29
+    2025-05-08: 47585.14
+    2025-05-09: 47585.14
+    2025-05-10: 47585.14
+    2025-05-11: 46031.94
+    2025-05-12: 44654.05
+    2025-05-13: 38802.05
+    2025-05-14: 35532.21
+    2025-05-15: 76066.00
+    2025-05-16: 76066.00
+  FIELD COMPARISON:
+    XX amount_safe_to_pay: expected=9152.0, actual=8532.21
+    OK affordability_status: expected=affordable_later, actual=affordable_later
+    OK recommended_payment_method: expected=wait, actual=wait
+    XX payment_plan: expected=, actual=2025-07-15:38016
+    XX earliest_date_for_full_payment: expected=, actual=2025-07-15
+    OK spending_changes_needed: expected=none, actual=none
+
+================================================================================
+request_24: expected_safe=13420.0, actual_safe=13555.64, diff=135.64
+  user=user_24, currency=INR
+  balance=85045.0, min_balance=51000.0
+  requested_amount=109600.0, request_date=2026-01-04
+  desired_completion=2026-02-08
+  min_trajectory_cents=6455564, minimum_cents=5100000
+  available_cents=1355564, formula_safe=13555.64
+  baseline_safe=True
+  min_day=2026-01-13, min_day_balance=64555.64
+  future_events: 65 total, 3 credits, 62 debits
+  CREDITS:
+    2026-01-15 PROJ REC salary 61000.0 INR [proj_sal_INR_main_20260115] Confirmed or recurring salary
+    2026-02-15 PROJ REC salary 61000.0 INR [proj_sal_INR_main_20260215] Confirmed or recurring salary
+    2026-03-15 PROJ REC salary 61000.0 INR [proj_sal_INR_main_20260315] Confirmed or recurring salary
+  DEBITS:
+    2026-01-05 PROJ REC projected utilities 3490.5 INR [proj_event_2077_20260105] Household utility payment
+    2026-01-06 PROJ REC projected insurance 2510.0 INR [proj_event_2078_20260106] Insurance policy payment
+    2026-01-06 PROJ REC projected groceries 2145.69 INR [proj_event_2101_20260106] Local market purchase
+    2026-01-07 PROJ REC projected transport 1327.86 INR [proj_event_2137_20260107] Rail pass
+    2026-01-08 PROJ REC projected streaming 1200.0 INR [proj_event_2080_20260108] Family streaming plan
+    2026-01-10 PROJ REC projected dining 1842.2 INR [proj_event_2163_20260110] Takeaway order
+    2026-01-11 EXPL  scheduled insurance 1830.0 INR [event_2166] Scheduled insurance payment
+    2026-01-11 PROJ REC projected cloud_storage 355.0 INR [proj_event_2079_20260111] Online backup subscription
+    2026-01-11 PROJ REC projected shopping 2564.0 INR [proj_event_2081_20260111] Monthly shopping spend
+    2026-01-12 PROJ REC projected transport 1327.86 INR [proj_event_2137_20260112] Rail pass
+    2026-01-13 PROJ REC projected entertainment 1896.25 INR [proj_event_2082_20260113] Local event tickets
+    2026-01-16 PROJ REC projected groceries 2145.69 INR [proj_event_2101_20260116] Local market purchase
+    2026-01-17 PROJ REC projected transport 1327.86 INR [proj_event_2137_20260117] Rail pass
+    2026-01-17 PROJ REC projected dining 1842.2 INR [proj_event_2163_20260117] Takeaway order
+    2026-01-22 PROJ REC projected transport 1327.86 INR [proj_event_2137_20260122] Rail pass
+    2026-01-24 PROJ REC projected dining 1842.2 INR [proj_event_2163_20260124] Takeaway order
+    2026-01-26 PROJ REC projected groceries 2145.69 INR [proj_event_2101_20260126] Local market purchase
+    2026-01-27 PROJ REC projected transport 1327.86 INR [proj_event_2137_20260127] Rail pass
+    2026-01-31 PROJ REC projected dining 1842.2 INR [proj_event_2163_20260131] Takeaway order
+    2026-02-01 PROJ REC projected rent 18600.0 INR [proj_event_2083_20260201] Landlord standing order
+    2026-02-01 PROJ REC projected transport 1327.86 INR [proj_event_2137_20260201] Rail pass
+    2026-02-05 PROJ REC projected utilities 3490.5 INR [proj_event_2077_20260205] Household utility payment
+    2026-02-05 PROJ REC projected groceries 2145.69 INR [proj_event_2101_20260205] Local market purchase
+    2026-02-06 PROJ REC projected insurance 2510.0 INR [proj_event_2078_20260206] Insurance policy payment
+    2026-02-06 PROJ REC projected transport 1327.86 INR [proj_event_2137_20260206] Rail pass
+    2026-02-07 PROJ REC projected dining 1842.2 INR [proj_event_2163_20260207] Takeaway order
+    2026-02-08 PROJ REC projected streaming 1200.0 INR [proj_event_2080_20260208] Family streaming plan
+    2026-02-11 PROJ REC projected cloud_storage 355.0 INR [proj_event_2079_20260211] Online backup subscription
+    2026-02-11 PROJ REC projected shopping 2564.0 INR [proj_event_2081_20260211] Monthly shopping spend
+    2026-02-11 PROJ REC projected transport 1327.86 INR [proj_event_2137_20260211] Rail pass
+    2026-02-13 PROJ REC projected entertainment 1896.25 INR [proj_event_2082_20260213] Local event tickets
+    2026-02-14 PROJ REC projected dining 1842.2 INR [proj_event_2163_20260214] Takeaway order
+    2026-02-15 PROJ REC projected groceries 2145.69 INR [proj_event_2101_20260215] Local market purchase
+    2026-02-16 PROJ REC projected transport 1327.86 INR [proj_event_2137_20260216] Rail pass
+    2026-02-21 PROJ REC projected transport 1327.86 INR [proj_event_2137_20260221] Rail pass
+    2026-02-21 PROJ REC projected dining 1842.2 INR [proj_event_2163_20260221] Takeaway order
+    2026-02-25 PROJ REC projected groceries 2145.69 INR [proj_event_2101_20260225] Local market purchase
+    2026-02-26 PROJ REC projected transport 1327.86 INR [proj_event_2137_20260226] Rail pass
+    2026-02-28 PROJ REC projected dining 1842.2 INR [proj_event_2163_20260228] Takeaway order
+    2026-03-01 PROJ REC projected rent 18600.0 INR [proj_event_2083_20260301] Landlord standing order
+    2026-03-03 PROJ REC projected transport 1327.86 INR [proj_event_2137_20260303] Rail pass
+    2026-03-05 PROJ REC projected utilities 3490.5 INR [proj_event_2077_20260305] Household utility payment
+    2026-03-06 PROJ REC projected insurance 2510.0 INR [proj_event_2078_20260306] Insurance policy payment
+    2026-03-07 PROJ REC projected groceries 2145.69 INR [proj_event_2101_20260307] Local market purchase
+    2026-03-07 PROJ REC projected dining 1842.2 INR [proj_event_2163_20260307] Takeaway order
+    2026-03-08 PROJ REC projected streaming 1200.0 INR [proj_event_2080_20260308] Family streaming plan
+    2026-03-08 PROJ REC projected transport 1327.86 INR [proj_event_2137_20260308] Rail pass
+    2026-03-11 PROJ REC projected cloud_storage 355.0 INR [proj_event_2079_20260311] Online backup subscription
+    2026-03-11 PROJ REC projected shopping 2564.0 INR [proj_event_2081_20260311] Monthly shopping spend
+    2026-03-13 PROJ REC projected entertainment 1896.25 INR [proj_event_2082_20260313] Local event tickets
+    2026-03-13 PROJ REC projected transport 1327.86 INR [proj_event_2137_20260313] Rail pass
+    2026-03-14 PROJ REC projected dining 1842.2 INR [proj_event_2163_20260314] Takeaway order
+    2026-03-17 PROJ REC projected groceries 2145.69 INR [proj_event_2101_20260317] Local market purchase
+    2026-03-18 PROJ REC projected transport 1327.86 INR [proj_event_2137_20260318] Rail pass
+    2026-03-21 PROJ REC projected dining 1842.2 INR [proj_event_2163_20260321] Takeaway order
+    2026-03-23 PROJ REC projected transport 1327.86 INR [proj_event_2137_20260323] Rail pass
+    2026-03-27 PROJ REC projected groceries 2145.69 INR [proj_event_2101_20260327] Local market purchase
+    2026-03-28 PROJ REC projected transport 1327.86 INR [proj_event_2137_20260328] Rail pass
+    2026-03-28 PROJ REC projected dining 1842.2 INR [proj_event_2163_20260328] Takeaway order
+    2026-04-01 PROJ REC projected rent 18600.0 INR [proj_event_2083_20260401] Landlord standing order
+    2026-04-02 PROJ REC projected transport 1327.86 INR [proj_event_2137_20260402] Rail pass
+    2026-04-04 PROJ REC projected dining 1842.2 INR [proj_event_2163_20260404] Takeaway order
+  TRAJECTORY (first 10 and min area):
+    2026-01-04: 85045.00
+    2026-01-05: 81554.50
+    2026-01-06: 76898.81
+    2026-01-07: 75570.95
+    2026-01-08: 74370.95
+    2026-01-09: 74370.95
+    2026-01-10: 72528.75
+    2026-01-11: 67779.75
+    2026-01-12: 66451.89
+    2026-01-13: 64555.64
+  FIELD COMPARISON:
+    XX amount_safe_to_pay: expected=13420.0, actual=13555.64
+    OK affordability_status: expected=not_affordable, actual=not_affordable
+    OK recommended_payment_method: expected=not_recommended, actual=not_recommended
+    XX payment_plan: expected=, actual=none
+    OK earliest_date_for_full_payment: expected=, actual=
+    OK spending_changes_needed: expected=none, actual=none
+
+================================================================================
+request_25: expected_safe=1425000.0, actual_safe=221174.45, diff=-1203825.55
+  user=user_25, currency=IDR
+  balance=32063050.0, min_balance=23379100.0
+  requested_amount=60496000.0, request_date=2024-03-06
+  desired_completion=2024-04-17
+  min_trajectory_cents=2360027445, minimum_cents=2337910000
+  available_cents=22117445, formula_safe=221174.45
+  baseline_safe=True
+  min_day=2024-03-14, min_day_balance=23600274.45
+  future_events: 64 total, 3 credits, 61 debits
+  CREDITS:
+    2024-03-15 EXPL REC salary 1800.0 USD [event_2288] Confirmed or recurring salary
+    2024-04-15 PROJ REC salary 1800.0 USD [proj_sal_USD_main_20240415] Confirmed or recurring salary
+    2024-05-15 PROJ REC salary 1800.0 USD [proj_sal_USD_main_20240515] Confirmed or recurring salary
+  DEBITS:
+    2024-03-06 PROJ REC projected utilities 1201903.67 IDR [proj_event_2201_20240306] Household utility payment
+    2024-03-06 PROJ REC projected dining 1054433.75 IDR [proj_event_2286_20240306] Neighbourhood restaurant
+    2024-03-07 PROJ REC projected insurance 904400.0 IDR [proj_event_2202_20240307] Insurance policy payment
+    2024-03-09 PROJ REC projected streaming 573800.0 IDR [proj_event_2204_20240309] Video streaming plan
+    2024-03-09 PROJ REC projected groceries 1335295.2 IDR [proj_event_2225_20240309] Fresh food shop
+    2024-03-10 PROJ REC projected transport 615549.49 IDR [proj_event_2261_20240310] Ride-hailing trip
+    2024-03-12 PROJ REC projected cloud_storage 126350.0 IDR [proj_event_2203_20240312] Cloud storage plan
+    2024-03-12 PROJ REC projected shopping 1170271.29 IDR [proj_event_2205_20240312] Monthly shopping spend
+    2024-03-13 PROJ REC projected dining 1054433.75 IDR [proj_event_2286_20240313] Neighbourhood restaurant
+    2024-03-14 PROJ REC projected entertainment 426338.4 IDR [proj_event_2206_20240314] Games and recreation
+    2024-03-15 PROJ REC projected transport 615549.49 IDR [proj_event_2261_20240315] Ride-hailing trip
+    2024-03-19 PROJ REC projected groceries 1335295.2 IDR [proj_event_2225_20240319] Fresh food shop
+    2024-03-20 PROJ REC projected transport 615549.49 IDR [proj_event_2261_20240320] Ride-hailing trip
+    2024-03-20 PROJ REC projected dining 1054433.75 IDR [proj_event_2286_20240320] Neighbourhood restaurant
+    2024-03-25 PROJ REC projected transport 615549.49 IDR [proj_event_2261_20240325] Ride-hailing trip
+    2024-03-27 PROJ REC projected dining 1054433.75 IDR [proj_event_2286_20240327] Neighbourhood restaurant
+    2024-03-29 PROJ REC projected groceries 1335295.2 IDR [proj_event_2225_20240329] Fresh food shop
+    2024-03-30 PROJ REC projected transport 615549.49 IDR [proj_event_2261_20240330] Ride-hailing trip
+    2024-04-02 PROJ REC projected rent 6954000.0 IDR [proj_event_2207_20240402] Monthly rent
+    2024-04-03 PROJ REC projected dining 1054433.75 IDR [proj_event_2286_20240403] Neighbourhood restaurant
+    2024-04-04 PROJ REC projected transport 615549.49 IDR [proj_event_2261_20240404] Ride-hailing trip
+    2024-04-06 PROJ REC projected utilities 1201903.67 IDR [proj_event_2201_20240406] Household utility payment
+    2024-04-07 PROJ REC projected insurance 904400.0 IDR [proj_event_2202_20240407] Insurance policy payment
+    2024-04-08 PROJ REC projected groceries 1335295.2 IDR [proj_event_2225_20240408] Fresh food shop
+    2024-04-09 PROJ REC projected streaming 573800.0 IDR [proj_event_2204_20240409] Video streaming plan
+    2024-04-09 PROJ REC projected transport 615549.49 IDR [proj_event_2261_20240409] Ride-hailing trip
+    2024-04-10 PROJ REC projected dining 1054433.75 IDR [proj_event_2286_20240410] Neighbourhood restaurant
+    2024-04-12 PROJ REC projected cloud_storage 126350.0 IDR [proj_event_2203_20240412] Cloud storage plan
+    2024-04-12 PROJ REC projected shopping 1170271.29 IDR [proj_event_2205_20240412] Monthly shopping spend
+    2024-04-14 PROJ REC projected entertainment 426338.4 IDR [proj_event_2206_20240414] Games and recreation
+    2024-04-14 PROJ REC projected transport 615549.49 IDR [proj_event_2261_20240414] Ride-hailing trip
+    2024-04-17 PROJ REC projected dining 1054433.75 IDR [proj_event_2286_20240417] Neighbourhood restaurant
+    2024-04-18 PROJ REC projected groceries 1335295.2 IDR [proj_event_2225_20240418] Fresh food shop
+    2024-04-19 PROJ REC projected transport 615549.49 IDR [proj_event_2261_20240419] Ride-hailing trip
+    2024-04-24 PROJ REC projected transport 615549.49 IDR [proj_event_2261_20240424] Ride-hailing trip
+    2024-04-24 PROJ REC projected dining 1054433.75 IDR [proj_event_2286_20240424] Neighbourhood restaurant
+    2024-04-28 PROJ REC projected groceries 1335295.2 IDR [proj_event_2225_20240428] Fresh food shop
+    2024-04-29 PROJ REC projected transport 615549.49 IDR [proj_event_2261_20240429] Ride-hailing trip
+    2024-05-01 PROJ REC projected dining 1054433.75 IDR [proj_event_2286_20240501] Neighbourhood restaurant
+    2024-05-02 PROJ REC projected rent 6954000.0 IDR [proj_event_2207_20240502] Monthly rent
+    2024-05-04 PROJ REC projected transport 615549.49 IDR [proj_event_2261_20240504] Ride-hailing trip
+    2024-05-06 PROJ REC projected utilities 1201903.67 IDR [proj_event_2201_20240506] Household utility payment
+    2024-05-07 PROJ REC projected insurance 904400.0 IDR [proj_event_2202_20240507] Insurance policy payment
+    2024-05-08 PROJ REC projected groceries 1335295.2 IDR [proj_event_2225_20240508] Fresh food shop
+    2024-05-08 PROJ REC projected dining 1054433.75 IDR [proj_event_2286_20240508] Neighbourhood restaurant
+    2024-05-09 PROJ REC projected streaming 573800.0 IDR [proj_event_2204_20240509] Video streaming plan
+    2024-05-09 PROJ REC projected transport 615549.49 IDR [proj_event_2261_20240509] Ride-hailing trip
+    2024-05-12 PROJ REC projected cloud_storage 126350.0 IDR [proj_event_2203_20240512] Cloud storage plan
+    2024-05-12 PROJ REC projected shopping 1170271.29 IDR [proj_event_2205_20240512] Monthly shopping spend
+    2024-05-14 PROJ REC projected entertainment 426338.4 IDR [proj_event_2206_20240514] Games and recreation
+    2024-05-14 PROJ REC projected transport 615549.49 IDR [proj_event_2261_20240514] Ride-hailing trip
+    2024-05-15 PROJ REC projected dining 1054433.75 IDR [proj_event_2286_20240515] Neighbourhood restaurant
+    2024-05-18 PROJ REC projected groceries 1335295.2 IDR [proj_event_2225_20240518] Fresh food shop
+    2024-05-19 PROJ REC projected transport 615549.49 IDR [proj_event_2261_20240519] Ride-hailing trip
+    2024-05-22 PROJ REC projected dining 1054433.75 IDR [proj_event_2286_20240522] Neighbourhood restaurant
+    2024-05-24 PROJ REC projected transport 615549.49 IDR [proj_event_2261_20240524] Ride-hailing trip
+    2024-05-28 PROJ REC projected groceries 1335295.2 IDR [proj_event_2225_20240528] Fresh food shop
+    2024-05-29 PROJ REC projected transport 615549.49 IDR [proj_event_2261_20240529] Ride-hailing trip
+    2024-05-29 PROJ REC projected dining 1054433.75 IDR [proj_event_2286_20240529] Neighbourhood restaurant
+    2024-06-02 PROJ REC projected rent 6954000.0 IDR [proj_event_2207_20240602] Monthly rent
+    2024-06-03 PROJ REC projected transport 615549.49 IDR [proj_event_2261_20240603] Ride-hailing trip
+  TRAJECTORY (first 10 and min area):
+    2024-03-06: 29806712.58
+    2024-03-07: 28902312.58
+    2024-03-08: 28902312.58
+    2024-03-09: 26993217.38
+    2024-03-10: 26377667.89
+    2024-03-11: 26377667.89
+    2024-03-12: 25081046.60
+    2024-03-13: 24026612.85
+    2024-03-14: 23600274.45
+    2024-03-15: 51484718.96
+  FIELD COMPARISON:
+    XX amount_safe_to_pay: expected=1425000.0, actual=221174.45
+    OK affordability_status: expected=not_affordable, actual=not_affordable
+    OK recommended_payment_method: expected=not_recommended, actual=not_recommended
+    XX payment_plan: expected=, actual=none
+    OK earliest_date_for_full_payment: expected=, actual=
+    OK spending_changes_needed: expected=none, actual=none

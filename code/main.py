@@ -48,7 +48,7 @@ def generate_predictions(dataset_dir, request_filename='requests.csv', diagnosti
     futures = {}
     for request_id, request in requests.items():
         profile = profiles[request.user_id]
-        future = builder.build(request.user_id, profile, request.request_date)
+        future = builder.build(request.user_id, profile, request.request_date, request_id=request_id)
         futures[request_id] = future
         trace = {} if diagnostics is not None else None
         safe_amount, plan = optimizer.evaluate_request(

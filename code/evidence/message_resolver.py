@@ -61,6 +61,11 @@ class MessageResolver:
                     kind = 'salary_confirmed'
             elif message.source_type == 'service_provider' and ('client approved an invoice' in text or 'klien menyetujui pembayaran faktur' in text):
                 kind = 'confirmed_invoice'
+            elif message.source_type == 'service_provider' and any(w in text for w in (
+                'can change', 'dapat berubah', "isn't withdrawable", 'isnt withdrawable',
+                'not withdrawable', 'belum dapat ditarik', 'payout is still pending', 'masih tertunda'
+            )):
+                kind = 'income_uncertain'
             elif message.source_type in ('service_provider', 'merchant') and ('rent' in text or 'sewa' in text):
                 pct = re.search(r'(\d+(?:\.\d+)?)\s*%', text)
                 if pct and any(w in text for w in ('increase', 'menaik', 'naik')):

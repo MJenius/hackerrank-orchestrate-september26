@@ -50,9 +50,6 @@ class RecurrenceEngine:
                 cadence, count = Counter(gaps).most_common(1)[0]
                 if count < 2 or count * 2 < len(gaps):
                     continue
-                # An off-cycle receipt does not shift the established cadence.
-                phase = Counter(d.toordinal() % cadence for d in dates).most_common(1)[0][0]
-                history = [e for e in history if date.fromisoformat(e.settlement_date).toordinal() % cadence == phase]
                 if len(history) < 3:
                     continue
             elif not monthly_history(history):

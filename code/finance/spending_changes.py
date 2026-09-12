@@ -99,8 +99,8 @@ class SpendingChangeOptimizer:
         willing_reduce = set(profile.expense_categories_user_is_willing_to_reduce)
 
         for e in future_events:
-            # Only projected recurring flexible expenses may be changed; explicit one-time expenses must never qualify
-            if not e.get('is_recurring', e.get('is_projected', False)) or e.get('status') == 'pending':
+            # A spending-change candidate is eligible only when the underlying event is explicitly recurring: is_recurring is True
+            if not e.get('is_recurring') or e.get('status') == 'pending':
                 continue
             if e.get('direction') != 'debit':
                 continue
